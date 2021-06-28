@@ -41,6 +41,12 @@
   width: 100%;
   margin-top: 50px;
   flex-flow: column;
+  @media (max-width: 1439px) {
+    padding: 0 20px;
+  }
+  @media (max-width: 767px) {
+    padding: 0;
+  }
 }
 
 .table-block__summary {
@@ -48,16 +54,32 @@
   width: 45%;
   margin: 0 auto;
   justify-content: space-between;
+  @media (max-width: 767px) {
+    max-width: 300px;
+    width: 100%;
+  }
 }
 
-.table-block__schedule {
+.table-block__scroll-wrapper{
   margin-top: 60px;
+  display: flex;
+  flex-flow: column;
+  overflow-x: scroll;
+  width: 100%;
+  &::-webkit-scrollbar{
+    display: none;
+  }
+}
+
+.table-block__schedule{
+  min-width: 1440px;
 }
 
 .table-block__progress {
   display: flex;
   flex-flow: column;
   width: 100%;
+  min-width: 1440px;
 }
 
 .table-block__progress-row {
@@ -67,6 +89,12 @@
 .voyants-block {
   margin-top: 40px;
   flex-flow: column;
+  padding: 0 20px;
+  @media (max-width: 767px) {
+    max-width: 375px;
+    width: 100%;
+    margin: 0 auto;
+  }
 }
 
 .voyants-block__search {
@@ -973,6 +1001,7 @@
 }
 
 .search-input {
+  padding-right: 30px;
   width: 100%;
   font-style: normal;
   font-weight: normal;
@@ -1139,6 +1168,8 @@
 .schedule-block__hours-row {
   display: flex;
   flex-flow: wrap;
+  justify-content: flex-end;
+  padding-right: 5px;
 
   font-family: Mada;
   font-style: normal;
@@ -1156,7 +1187,6 @@
 }
 
 .progress-row__name {
-  margin-right: 70px;
   font-family: Prata;
   font-weight: 500;
   font-size: 14px;
