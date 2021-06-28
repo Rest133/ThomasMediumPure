@@ -1,0 +1,137 @@
+.popup {
+  position: absolute;
+  display: none;
+  flex-flow: row wrap;
+  padding: 40px;
+  background: #FFFFFF;
+  border-radius: 30px;
+}
+
+.popup_cookies {
+  max-width: 1357px;
+  flex-flow: row;
+  width: 100%;
+  left: calc((100% - 1357px) / 2);
+  bottom: 20%;
+
+  @media (max-width: 1357px) {
+    left: 0;
+  }
+  @media (max-width: 1025px) {
+    max-width: 768px;
+    left: calc((100% - 768px) / 2);
+    flex-flow: column;
+  }
+  @media (max-width: 767px) {
+    padding: 25px;
+    max-width: 335px;
+    left: calc((100% - 335px) / 2);
+  }
+}
+
+.popup__content {
+  display: flex;
+  flex-flow: wrap;
+  align-items: flex-start;
+  width: 77%;
+  @media (max-width: 1025px) {
+    width: 100%;
+  }
+}
+
+.popup__content-block{
+  display: flex;
+  width: 50%;
+  align-items: flex-start;
+  @media (max-width: 1025px) {
+    width: 100%;
+    flex-flow: wrap;
+    margin-bottom: 10px;
+  }
+}
+
+.popup__title {
+  width: 100%;
+  margin-bottom: 15px;
+  font-family: Prata;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 130%;
+
+  color: #000000;
+  @media (max-width: 767px) {
+    text-align: center;
+    font-size: 25px;
+  }
+}
+
+.popup__text {
+  width: 300px;
+  margin: 0 35px;
+
+  font-family: Mada;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+
+  color: #000000;
+  @media (max-width: 1025px) {
+    width: 100%;
+  }
+  @media (max-width: 767px) {
+    margin: 0;
+  }
+}
+
+.popup__button-row {
+  display: flex;
+  flex-flow: column;
+  width: 23%;
+  justify-content: space-evenly;
+  align-items: center;
+  @media (max-width: 1025px) {
+    width: 100%;
+  }
+  @media (max-width: 767px) {
+    margin-top: 20px;
+  }
+}
+
+.popup__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 32px;
+  font-family: Mada;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 150%;
+  text-align: center;
+  color: #769250;
+
+  border: 1px solid #769250;
+  border-radius: 40px;
+  background: transparent;
+  margin-bottom: 15px;
+  cursor: pointer;
+  transition: 0.2s all ease-in-out;
+}
+
+.popup__button_agree {
+  background: #769250;
+  color: #FFFFFF;
+  &:hover{
+    color: #769250;
+    background: #FFFFFF;
+  }
+}
+
+.popup__button_more{
+  &:hover{
+    background: #769250;
+    color: #FFFFFF;
+  }
+}
