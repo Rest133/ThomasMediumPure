@@ -22,33 +22,95 @@ img {
 .wrapper {
   display: flex;
   flex-flow: column;
-  max-width: 1440px;
   width: 100%;
   margin: 0 auto;
+  overflow: hidden;
   @media (max-width: 1025px) {
     overflow: hidden;
   }
 }
 
-.header {
+header {
   display: flex;
+  max-width: 1440px;;
   width: 100%;
   height: 60px;
-  margin-top: 35px;
+  margin: 35px auto 0;
   padding: 0 20px;
   align-items: center;
   @media (max-width: 1025px) {
-    max-width: 768px;
-    width: 100%;
-    margin: 20px auto 0;
-    .main-menu{
-      display: none;
-    }
+    position: fixed;
+    width: 100vw;
+    height: 80px;
+    margin: 0;
+    padding: 20px calc((100% - 768px) / 2) 0;
+    background: #FFFFFF;
+    z-index: 100;
+  }
+  @media (max-width: 767px) {
+    padding: 20px calc((100% - 375px) / 2) 0;
+  }
+  @media (max-width: 374px) {
+    padding: 20px 20px 0;
   }
 }
 
+.burger-menu {
+  position: absolute;
+  display: none;
+  width: 20px;
+  height: 2px;
+  cursor: pointer;
+
+  background: #000000;
+  border-radius: 2px;
+
+  &::before, &::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #000000;
+    border-radius: 2px;
+    transition: 0.2s all ease-in-out;
+  }
+
+  &::before {
+    top: -6px;
+  }
+
+  &::after {
+    bottom: -6px;
+  }
+
+  @media (max-width: 1025px) {
+    display: flex;
+    z-index: 10;
+  }
+}
+
+.burger-menu_active {
+  background: transparent;
+
+  &::before {
+    top: 0;
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    bottom: 0;
+    transform: rotate(-45deg);
+  }
+}
+
+
 .logo {
   width: 140px;
+  @media (max-width: 1025px) {
+    margin: 0 auto;
+    width: 94px;
+    z-index: 10;
+  }
 }
 
 .main-menu {
@@ -56,12 +118,28 @@ img {
   display: flex;
   width: max-content;
   justify-content: space-between;
+  @media (max-width: 1025px) {
+    width: 100vw;
+    height: 0;
+    overflow: hidden;
+    flex-flow: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #FFFFFF;
+    transition: 0.5s all ease-in-out;
+  }
+}
+.main-menu_active{
+  height: 100vh!important;
 }
 
-.main-menu_footer{
+.main-menu_footer {
   margin-right: 10%;
   margin-bottom: auto;
-  @media (max-width: 767px) {
+  @media (max-width: 1025px) {
     display: none;
   }
 }
@@ -91,6 +169,13 @@ img {
   &:active {
     background: #34520B;
     color: #FFFFFF;
+  }
+  @media (max-width: 1025px) {
+    width: max-content;
+    min-height: 50px;
+    &:first-of-type{
+      margin-top: 200px;
+    }
   }
 }
 

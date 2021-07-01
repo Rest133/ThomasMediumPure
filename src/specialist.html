@@ -16,27 +16,93 @@
     <link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Mada:wght@200;300;400;500;600;700;900&family=Prata&family=Mitr:wght@200;300;400;500;600;700&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mada:wght@200;300;400;500;600;700;900&family=Prata&display=swap"
           rel="stylesheet">
 </head>
 <body>
 <div class="wrapper">
     @@include('_header.html')
-
     <div class="content">
-        <!-- First Block -->
-        <div class="block block_first-page-block voyants-block">
-            <div class="voyants-title tl_title">Voyants planifiés</div>
-            <div class="voyants-block__search search">
-                <input type="text" class="search-input"
-                       placeholder="Recherchez un voyant par ses compétences et trouvez son numéro d'appel (remplissez un ou plusieurs champs)">
-                <button class="search-submit-button"></button>
+        <!-- Specialist Block -->
+        <div class="block block_first-page-block specialist-block">
+            <div class="specialist-block__description">
+                <div class="specialist-block__meta-info-row">
+                    <div class="specialist-block__rating rating">
+                        <span class="rating__star rating__star_active"></span>
+                        <span class="rating__star rating__star_active"></span>
+                        <span class="rating__star rating__star_active"></span>
+                        <span class="rating__star rating__star_active"></span>
+                        <span class="rating__star"></span>
+                    </div>
+                    <img src="assets/img/2.content/favoris_element_flag.svg" alt="" class="language-img language-img_french">
+                    <button class="specialist-block__favorite-button favorite-button">
+                            <img src="assets/img/2.content/favoris_element_icon.svg" alt="" class="favorite-button__img">
+                        Ajouter aux Favoris
+                    </button>
+                </div>
+                <div class="specialist-block__title tl_title">Thomas</div>
+                <div class="favoris-row__text-column-row favoris-row__text-column-row_specialist-block">
+                    <div class="favoris-row__text-column-element">Médium</div>
+                    <div class="favoris-row__text-column-element">Numérologue</div>
+                    <div class="favoris-row__text-column-element">Astrologue</div>
+                </div>
+                <p class="specialist-block__description-text">
+                    Bonjour, Médium de mère en fille. <br><br>
+                    Je me sers parfois de supports afin de mieux détailler mes réponses. Retenez bien ce que je vous
+                    dis je reçois des messages pour vous que je vous transmets. Je travaille dans le respect de vos
+                    choix et de votre libre arbitre. A bientôt
+                    <br><br>Teresa
+                </p>
+                <div class="specialist-block__buttons-row">
+                    <button class="block__button block__button_specialist-block">Je prends un rendez-vous en privé</button>
+                    <button class="block__play-button block__play-button_specialist-block"></button>
+                </div>
+                <div class="specialist-block__mini-info-blocks-row">
+                    <p class="mini-info-block mini-info-block_comment">Plus de 79 appels reçus</p>
+                    <p class="mini-info-block mini-info-block_smile">Pourcentage de réponse 69%</p>
+                </div>
+            </div>
+            <div class="specialist-block__personal-information">
+                <div class="specialist-block__contacts">
+                    <div class="specialist-block__contact">
+                        <p class="specialist-block__contact-title">Retrouvez moi sur le</p>
+                        <div class="favoris-row__text-column-phone favoris-row__text-column-phone_specialist-block">
+                            <div class="favoris-row__text-column-phone-button"></div>
+                            <div class="favoris-row__text-column-text">
+                                <p>0891 538 538</p>
+                                <p class="favoris-row__text-column-text-different">0.6 la minute sans CB</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="specialist-block__contact">
+                        <p class="specialist-block__contact-title">En privé sans attente</p>
+                        <div class="favoris-row__text-column-phone favoris-row__text-column-phone_specialist-block">
+                            <div class="favoris-row__text-column-phone-button"></div>
+                            <div class="favoris-row__text-column-text">
+                                <p>0891 538 538</p>
+                                <p class="favoris-row__text-column-text-different">0.6 la minute sans CB</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="specialist-block__contact specialist-block__contact_code">
+                        <p class="specialist-block__contact-code">4036 <span>code</span></p>
+                        <p class="specialist-block__subtext">Actif depuis le 13/07/2018</p>
+                    </div>
+                </div>
+                <div class="specialist-block__photo">
+                    <button class="block__button block__button_photo-block">connecté</button>
+                    <div class="specialist-block__photo-wrapper">
+                        <img src="assets/img/2.content/specialist-photo.png" alt="" class="specialist-block__photo-img">
+                    </div>
+                </div>
             </div>
         </div>
-        <!-- /First Block-->
+        <!-- Specialist Block -->
 
         <!-- Table Block -->
         <div class="block table-block">
+            <div class="table-title tl_title">Disponibilités:</div>
             <div class="table-block__summary">
                 <div class="table-block__mini-progress-block mini-progress-block">
                     <progress class="mini-progress-block__progress-line" max="100" value="25"></progress>
@@ -608,6 +674,89 @@
         </div>
         <!-- /Table Block -->
 
+        <!-- Commentaries Block -->
+        <div class="block comment-block">
+            <div class="comment-block__top">
+                <p class="comment-block__title tl_title">Commentaires</p>
+                <button class="block__button block__button_comment-top">Donner des commentaires</button>
+            </div>
+            <div class="comment-block__comment-list">
+                <div class="comment-block__comment-list-item comment">
+                    <div class="comment__item-meta">
+                        <p class="comment__username">Monica</p>
+                        <p class="comment__date">Sam. 02/02 Par lina</p>
+                        <div class="comment__rating rating">
+                            <span class="rating__star rating__star_active"></span>
+                            <span class="rating__star rating__star_active"></span>
+                            <span class="rating__star rating__star_active"></span>
+                            <span class="rating__star rating__star_active"></span>
+                            <span class="rating__star"></span>
+                        </div>
+                    </div>
+                    <p class="comment__text-block">
+                        Beaucoup m'avaient dit des nouvelles, un contact, un retour, une reprise.....depuis des mois,
+                        je doutais fortement, et vous avez été la seule à me dire : pas de retour, ni de nouvelles, ni
+                        visuel. Je reconnais que vous avez toujours été très forte et vous aviez raison!
+                    </p>
+                </div>
+                <div class="comment-block__comment-list-item comment">
+                    <div class="comment__item-meta">
+                        <p class="comment__username">Monica</p>
+                        <p class="comment__date">Sam. 02/02 Par lina</p>
+                        <div class="comment__rating">
+                            <span class="comment__star comment__star_active"></span>
+                            <span class="comment__star comment__star_active"></span>
+                            <span class="comment__star comment__star_active"></span>
+                            <span class="comment__star comment__star_active"></span>
+                            <span class="comment__star"></span>
+                        </div>
+                    </div>
+                    <p class="comment__text-block">
+                        Beaucoup m'avaient dit des nouvelles, un contact, un retour, une reprise.....depuis des mois,
+                        je doutais fortement, et vous avez été la seule à me dire : pas de retour, ni de nouvelles, ni
+                        visuel. Je reconnais que vous avez toujours été très forte et vous aviez raison!
+                    </p>
+                </div>
+                <div class="comment-block__comment-list-item comment">
+                    <div class="comment__item-meta">
+                        <p class="comment__username">Monica</p>
+                        <p class="comment__date">Sam. 02/02 Par lina</p>
+                        <div class="comment__rating">
+                            <span class="comment__star comment__star_active"></span>
+                            <span class="comment__star comment__star_active"></span>
+                            <span class="comment__star comment__star_active"></span>
+                            <span class="comment__star comment__star_active"></span>
+                            <span class="comment__star"></span>
+                        </div>
+                    </div>
+                    <p class="comment__text-block">
+                        Beaucoup m'avaient dit des nouvelles, un contact, un retour, une reprise.....depuis des mois,
+                        je doutais fortement, et vous avez été la seule à me dire : pas de retour, ni de nouvelles, ni
+                        visuel. Je reconnais que vous avez toujours été très forte et vous aviez raison!
+                    </p>
+                </div>
+                <div class="comment-block__comment-list-item comment">
+                    <div class="comment__item-meta">
+                        <p class="comment__username">Monica</p>
+                        <p class="comment__date">Sam. 02/02 Par lina</p>
+                        <div class="comment__rating">
+                            <span class="comment__star comment__star_active"></span>
+                            <span class="comment__star comment__star_active"></span>
+                            <span class="comment__star comment__star_active"></span>
+                            <span class="comment__star comment__star_active"></span>
+                            <span class="comment__star"></span>
+                        </div>
+                    </div>
+                    <p class="comment__text-block">
+                        Beaucoup m'avaient dit des nouvelles, un contact, un retour, une reprise.....depuis des mois,
+                        je doutais fortement, et vous avez été la seule à me dire : pas de retour, ni de nouvelles, ni
+                        visuel. Je reconnais que vous avez toujours été très forte et vous aviez raison!
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- /Commentaries Block -->
+
         <!-- FAQ Block -->
         <div class="faq-block faq-block_standalone">
             <div class="faq-title tl_title">FAQ</div>
@@ -656,10 +805,47 @@
                 </details>
             </div>
         </div>
-        <!-- /FAQ Block -->
+        <!-- FAQ Block -->
     </div>
 
     @@include('_footer.html')
 </div>
+<div class="popup-wrapper">
+    <div class="popup popup_cookies">
+        <div class="popup__content">
+            <div class="popup__title">Réglages RGPD : gestion des cookies</div>
+            <div class="popup__content-block">
+                <div class="wrapper-voyance-search__row-checkbox-element wrapper-voyance-search__row-checkbox-element_popup">
+                    <input name="checkbox-medium" type="checkbox" checked class="voyance-search__checkbox">
+                    <label for="" class="voyance-search__label">
+                        <p class="voyance-search__checkbox-text">Session</p>
+                    </label>
+                </div>
+                <p class="popup__text">Le cookie de session est essentiel au fonctionnement de ce site et ne peut être
+                    désactivé. Il permet de conserver vos données lors de la navigation entre les pages du site.</p>
+            </div>
+            <div class="popup__content-block">
+                <div class="wrapper-voyance-search__row-checkbox-element wrapper-voyance-search__row-checkbox-element_popup">
+                    <input name="checkbox-medium" type="checkbox" checked class="voyance-search__checkbox">
+                    <label for="" class="voyance-search__label">
+                        <p class="voyance-search__checkbox-text">Analytics</p>
+                    </label>
+                </div>
+                <p class="popup__text">Les cookies Analytics, provenant du tiers Google, ont pour finalité de recueillir
+                    des
+                    statistiques de visites anonymes. Ces données une fois recoupées, pourraient être intrusives pour la
+                    vie
+                    privée des utilisateurs du site.</p>
+            </div>
+        </div>
+        <div class="popup__button-row">
+            <button class="popup__button popup__button_agree" data-popup-close>Enregistrer mes préférences</button>
+            <button class="popup__button popup__button_more">En savoir plus</button>
+        </div>
+    </div>
+</div>
+
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/script.js"></script>
 </body>
 </html>

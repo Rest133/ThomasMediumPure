@@ -5,7 +5,7 @@ footer {
   width: 100%;
   height: 240px;
   background: #FFEBCD;
-  @media (max-width: 767px) {
+  @media (max-width: 1025px) {
     margin-top: 70px;
     height: unset;
     background: #FFFFFF;
@@ -23,6 +23,7 @@ footer {
   @media (max-width: 1025px) {
     max-width: 768px;
     width: 100%;
+    align-items: center;
   }
   @media (max-width: 767px) {
     max-width: 375px;
@@ -33,7 +34,7 @@ footer {
 .footer__block {
   display: flex;
   align-items: center;
-  @media (max-width: 767px) {
+  @media (max-width: 1025px) {
     flex-flow: column;
   }
 }
@@ -41,7 +42,7 @@ footer {
 .footer__block_top {
   height: 92px;
   border-bottom: 2px solid #EBD7BA;
-  @media (max-width: 767px) {
+  @media (max-width: 1025px) {
     display: none;
   }
 }
@@ -57,10 +58,15 @@ footer {
 
   color: #000000;
   
-  @media (max-width: 767px) {
+  @media (max-width: 1025px) {
     display: flex;
-    flex-flow: column;
+    flex-flow: wrap;
     text-align: center;
+    justify-content: center;
+  }
+  
+  @media (max-width: 767px) {
+    flex-flow: column;
   }
 }
 
@@ -73,8 +79,11 @@ footer {
   &:hover {
    opacity: 0.7;
   }
+  @media (max-width: 1025px) {
+    margin: 10px 0 0;
+    width: 30%;
+  }
   @media (max-width: 767px) {
-    margin-top: 10px;
     width: 100%;
   }
 }
@@ -151,8 +160,12 @@ footer {
 
   background: #FFEBCD;
   border-radius: 80px;
-  @media (max-width: 767px) {
+  @media (max-width: 1025px) {
     display: flex;
+    margin-top: 60px;
+  }
+  @media (max-width: 767px) {
+    margin-top: 20px;
   }
 }
 
