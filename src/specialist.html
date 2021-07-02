@@ -35,9 +35,11 @@
                         <span class="rating__star rating__star_active"></span>
                         <span class="rating__star"></span>
                     </div>
+                    <div class="language-img-wrapper">
                     <img src="assets/img/2.content/favoris_element_flag.svg" alt="" class="language-img language-img_french">
+                    </div>
                     <button class="specialist-block__favorite-button favorite-button">
-                            <img src="assets/img/2.content/favoris_element_icon.svg" alt="" class="favorite-button__img">
+                        <span class="favorite-button__img"></span>
                         Ajouter aux Favoris
                     </button>
                 </div>
@@ -57,6 +59,28 @@
                 <div class="specialist-block__buttons-row">
                     <button class="block__button block__button_specialist-block">Je prends un rendez-vous en privé</button>
                     <button class="block__play-button block__play-button_specialist-block"></button>
+                </div>
+                <div class="specialist-block__contact-phone-mobile">
+                    <div class="specialist-block__contact">
+                        <p class="specialist-block__contact-title">Retrouvez moi sur le</p>
+                        <div class="favoris-row__text-column-phone favoris-row__text-column-phone_specialist-block">
+                            <div class="favoris-row__text-column-phone-button"></div>
+                            <div class="favoris-row__text-column-text">
+                                <p>0891 538 538</p>
+                                <p class="favoris-row__text-column-text-different">0.6 la minute sans CB</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="specialist-block__contact">
+                        <p class="specialist-block__contact-title">En privé sans attente</p>
+                        <div class="favoris-row__text-column-phone favoris-row__text-column-phone_specialist-block">
+                            <div class="favoris-row__text-column-phone-button"></div>
+                            <div class="favoris-row__text-column-text">
+                                <p>0891 538 538</p>
+                                <p class="favoris-row__text-column-text-different">0.6 la minute sans CB</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="specialist-block__mini-info-blocks-row">
                     <p class="mini-info-block mini-info-block_comment">Plus de 79 appels reçus</p>
@@ -88,6 +112,19 @@
                     <div class="specialist-block__contact specialist-block__contact_code">
                         <p class="specialist-block__contact-code">4036 <span>code</span></p>
                         <p class="specialist-block__subtext">Actif depuis le 13/07/2018</p>
+                    </div>
+                    <div class="specialist-block__contact-mobile">
+                        <button class="block__play-button block__play-button_contact-mobile"></button>
+                        <div class="language-img-wrapper language-img-wrapper_up">
+                            <img src="assets/img/2.content/favoris_element_flag.svg" alt="" class="language-img language-img_french">
+                            <p class="language-img__text">France</p>
+                        </div>
+                        <p class="specialist-block__contact-code specialist-block__contact-code_mobile">4036 <span>code</span></p>
+                        <button class="specialist-block__favorite-button-mobile favorite-button">
+                            <span class="favorite-button__img"></span>
+                            Ajouter aux Favoris
+                        </button>
+                        <p class="specialist-block__subtext specialist-block__subtext_contact-mobile">Actif depuis le 13/07/2018</p>
                     </div>
                 </div>
                 <div class="specialist-block__photo">
@@ -121,8 +158,6 @@
             <div class="table-block__scroll-wrapper">
                 <div class="table-block__schedule schedule-block">
                     <div class="schedule-block__date">
-                        <p class="schedule-block__text schedule-block__text_current-date">23 août 2020</p>
-                        <p class="schedule-block__text schedule-block__text_change-date">Une autre date</p>
                     </div>
                     <div class="schedule-block__hours-row">
                         <p class="schedule-block__text_hours">00h</p>
@@ -178,17 +213,35 @@
                 </div>
                 <div class="table-block__progress">
                     <div class="table-block__progress-row progress-row">
-                        <p class="progress-row__name">Evariste</p>
-                        <div class="progress-row__main">
-                            <div class="progress-row__photo-wrapper">
-                                <img src="assets/img/2.content/progress-row__specialist1.png" alt="" class="progress-row__photo">
-                            </div>
+                        <div class="progress-row__main progress-row__main_full">
+                            <p class="progress-row__numbers">24/02</p>
                             <div class="progress-row__list">
                                 <div class="progress-row__mini-progress-block mini-progress-block">
-                                    <progress class="mini-progress-block__progress-line" max="100" value="100"></progress>
+                                    <progress class="mini-progress-block__progress-line mini-progress-block__progress-line_green" max="100" value="100"></progress>
                                 </div>
                                 <div class="progress-row__mini-progress-block mini-progress-block">
-                                    <progress class="mini-progress-block__progress-line" max="100" value="50"></progress>
+                                    <progress class="mini-progress-block__progress-line mini-progress-block__progress-line_green" max="100" value="50"></progress>
+                                </div>
+                                <div class="progress-row__mini-progress-block mini-progress-block">
+                                    <progress class="mini-progress-block__progress-line mini-progress-block__progress-line_green" max="100" value="25"></progress>
+                                </div>
+                                <div class="progress-row__mini-progress-block mini-progress-block">
+                                    <progress class="mini-progress-block__progress-line" max="100" value="0"></progress>
+                                </div>
+                                <div class="progress-row__mini-progress-block mini-progress-block">
+                                    <progress class="mini-progress-block__progress-line mini-progress-block__progress-line_green" max="100" value="75"></progress>
+                                </div>
+                                <div class="progress-row__mini-progress-block mini-progress-block">
+                                    <progress class="mini-progress-block__progress-line" max="100" value="0"></progress>
+                                </div>
+                                <div class="progress-row__mini-progress-block mini-progress-block">
+                                    <progress class="mini-progress-block__progress-line mini-progress-block__progress-line_green" max="100" value="100"></progress>
+                                </div>
+                                <div class="progress-row__mini-progress-block mini-progress-block">
+                                    <progress class="mini-progress-block__progress-line" max="100" value="0"></progress>
+                                </div>
+                                <div class="progress-row__mini-progress-block mini-progress-block">
+                                    <progress class="mini-progress-block__progress-line mini-progress-block__progress-line_green" max="100" value="0"></progress>
                                 </div>
                                 <div class="progress-row__mini-progress-block mini-progress-block">
                                     <progress class="mini-progress-block__progress-line" max="100" value="25"></progress>
@@ -197,61 +250,40 @@
                                     <progress class="mini-progress-block__progress-line" max="100" value="0"></progress>
                                 </div>
                                 <div class="progress-row__mini-progress-block mini-progress-block">
-                                    <progress class="mini-progress-block__progress-line" max="100" value="75"></progress>
+                                    <progress class="mini-progress-block__progress-line mini-progress-block__progress-line_green" max="100" value="0"></progress>
+                                </div>
+                                <div class="progress-row__mini-progress-block mini-progress-block">
+                                    <progress class="mini-progress-block__progress-line mini-progress-block__progress-line_green" max="100" value="100"></progress>
                                 </div>
                                 <div class="progress-row__mini-progress-block mini-progress-block">
                                     <progress class="mini-progress-block__progress-line" max="100" value="0"></progress>
                                 </div>
                                 <div class="progress-row__mini-progress-block mini-progress-block">
-                                    <progress class="mini-progress-block__progress-line" max="100" value="100"></progress>
+                                    <progress class="mini-progress-block__progress-line mini-progress-block__progress-line_green" max="100" value="50"></progress>
                                 </div>
                                 <div class="progress-row__mini-progress-block mini-progress-block">
                                     <progress class="mini-progress-block__progress-line" max="100" value="0"></progress>
                                 </div>
                                 <div class="progress-row__mini-progress-block mini-progress-block">
-                                    <progress class="mini-progress-block__progress-line" max="100" value="0"></progress>
+                                    <progress class="mini-progress-block__progress-line mini-progress-block__progress-line_green" max="100" value="0"></progress>
                                 </div>
                                 <div class="progress-row__mini-progress-block mini-progress-block">
-                                    <progress class="mini-progress-block__progress-line" max="100" value="25"></progress>
-                                </div>
-                                <div class="progress-row__mini-progress-block mini-progress-block">
-                                    <progress class="mini-progress-block__progress-line" max="100" value="0"></progress>
+                                    <progress class="mini-progress-block__progress-line mini-progress-block__progress-line_green" max="100" value="100"></progress>
                                 </div>
                                 <div class="progress-row__mini-progress-block mini-progress-block">
                                     <progress class="mini-progress-block__progress-line" max="100" value="0"></progress>
                                 </div>
                                 <div class="progress-row__mini-progress-block mini-progress-block">
-                                    <progress class="mini-progress-block__progress-line" max="100" value="100"></progress>
+                                    <progress class="mini-progress-block__progress-line mini-progress-block__progress-line_green" max="100" value="25"></progress>
                                 </div>
                                 <div class="progress-row__mini-progress-block mini-progress-block">
                                     <progress class="mini-progress-block__progress-line" max="100" value="0"></progress>
                                 </div>
                                 <div class="progress-row__mini-progress-block mini-progress-block">
-                                    <progress class="mini-progress-block__progress-line" max="100" value="50"></progress>
+                                    <progress class="mini-progress-block__progress-line mini-progress-block__progress-line_green" max="100" value="50"></progress>
                                 </div>
                                 <div class="progress-row__mini-progress-block mini-progress-block">
-                                    <progress class="mini-progress-block__progress-line" max="100" value="0"></progress>
-                                </div>
-                                <div class="progress-row__mini-progress-block mini-progress-block">
-                                    <progress class="mini-progress-block__progress-line" max="100" value="0"></progress>
-                                </div>
-                                <div class="progress-row__mini-progress-block mini-progress-block">
-                                    <progress class="mini-progress-block__progress-line" max="100" value="100"></progress>
-                                </div>
-                                <div class="progress-row__mini-progress-block mini-progress-block">
-                                    <progress class="mini-progress-block__progress-line" max="100" value="0"></progress>
-                                </div>
-                                <div class="progress-row__mini-progress-block mini-progress-block">
-                                    <progress class="mini-progress-block__progress-line" max="100" value="25"></progress>
-                                </div>
-                                <div class="progress-row__mini-progress-block mini-progress-block">
-                                    <progress class="mini-progress-block__progress-line" max="100" value="0"></progress>
-                                </div>
-                                <div class="progress-row__mini-progress-block mini-progress-block">
-                                    <progress class="mini-progress-block__progress-line" max="100" value="50"></progress>
-                                </div>
-                                <div class="progress-row__mini-progress-block mini-progress-block">
-                                    <progress class="mini-progress-block__progress-line" max="100" value="100"></progress>
+                                    <progress class="mini-progress-block__progress-line mini-progress-block__progress-line_green" max="100" value="100"></progress>
                                 </div>
                                 <div class="progress-row__mini-progress-block mini-progress-block">
                                     <progress class="mini-progress-block__progress-line" max="100" value="0"></progress>
@@ -260,17 +292,35 @@
                         </div>
                     </div>
                     <div class="table-block__progress-row progress-row">
-                        <p class="progress-row__name">Karla</p>
-                        <div class="progress-row__main">
-                            <div class="progress-row__photo-wrapper">
-                                <img src="assets/img/2.content/progress-row__specialist2.png" alt="" class="progress-row__photo">
-                            </div>
+                        <div class="progress-row__main progress-row__main_full">
+                            <p class="progress-row__numbers">24/02</p>
                             <div class="progress-row__list">
                                 <div class="progress-row__mini-progress-block mini-progress-block">
-                                    <progress class="mini-progress-block__progress-line" max="100" value="100"></progress>
+                                    <progress class="mini-progress-block__progress-line mini-progress-block__progress-line_green" max="100" value="100"></progress>
                                 </div>
                                 <div class="progress-row__mini-progress-block mini-progress-block">
-                                    <progress class="mini-progress-block__progress-line" max="100" value="50"></progress>
+                                    <progress class="mini-progress-block__progress-line mini-progress-block__progress-line_green" max="100" value="50"></progress>
+                                </div>
+                                <div class="progress-row__mini-progress-block mini-progress-block">
+                                    <progress class="mini-progress-block__progress-line mini-progress-block__progress-line_green" max="100" value="25"></progress>
+                                </div>
+                                <div class="progress-row__mini-progress-block mini-progress-block">
+                                    <progress class="mini-progress-block__progress-line" max="100" value="0"></progress>
+                                </div>
+                                <div class="progress-row__mini-progress-block mini-progress-block">
+                                    <progress class="mini-progress-block__progress-line mini-progress-block__progress-line_green" max="100" value="75"></progress>
+                                </div>
+                                <div class="progress-row__mini-progress-block mini-progress-block">
+                                    <progress class="mini-progress-block__progress-line" max="100" value="0"></progress>
+                                </div>
+                                <div class="progress-row__mini-progress-block mini-progress-block">
+                                    <progress class="mini-progress-block__progress-line mini-progress-block__progress-line_green" max="100" value="100"></progress>
+                                </div>
+                                <div class="progress-row__mini-progress-block mini-progress-block">
+                                    <progress class="mini-progress-block__progress-line" max="100" value="0"></progress>
+                                </div>
+                                <div class="progress-row__mini-progress-block mini-progress-block">
+                                    <progress class="mini-progress-block__progress-line mini-progress-block__progress-line_green" max="100" value="0"></progress>
                                 </div>
                                 <div class="progress-row__mini-progress-block mini-progress-block">
                                     <progress class="mini-progress-block__progress-line" max="100" value="25"></progress>
@@ -279,80 +329,77 @@
                                     <progress class="mini-progress-block__progress-line" max="100" value="0"></progress>
                                 </div>
                                 <div class="progress-row__mini-progress-block mini-progress-block">
-                                    <progress class="mini-progress-block__progress-line" max="100" value="75"></progress>
+                                    <progress class="mini-progress-block__progress-line mini-progress-block__progress-line_green" max="100" value="0"></progress>
+                                </div>
+                                <div class="progress-row__mini-progress-block mini-progress-block">
+                                    <progress class="mini-progress-block__progress-line mini-progress-block__progress-line_green" max="100" value="100"></progress>
                                 </div>
                                 <div class="progress-row__mini-progress-block mini-progress-block">
                                     <progress class="mini-progress-block__progress-line" max="100" value="0"></progress>
                                 </div>
                                 <div class="progress-row__mini-progress-block mini-progress-block">
-                                    <progress class="mini-progress-block__progress-line" max="100" value="100"></progress>
+                                    <progress class="mini-progress-block__progress-line mini-progress-block__progress-line_green" max="100" value="50"></progress>
                                 </div>
                                 <div class="progress-row__mini-progress-block mini-progress-block">
                                     <progress class="mini-progress-block__progress-line" max="100" value="0"></progress>
                                 </div>
                                 <div class="progress-row__mini-progress-block mini-progress-block">
-                                    <progress class="mini-progress-block__progress-line" max="100" value="0"></progress>
+                                    <progress class="mini-progress-block__progress-line mini-progress-block__progress-line_green" max="100" value="0"></progress>
                                 </div>
                                 <div class="progress-row__mini-progress-block mini-progress-block">
-                                    <progress class="mini-progress-block__progress-line" max="100" value="25"></progress>
-                                </div>
-                                <div class="progress-row__mini-progress-block mini-progress-block">
-                                    <progress class="mini-progress-block__progress-line" max="100" value="0"></progress>
+                                    <progress class="mini-progress-block__progress-line mini-progress-block__progress-line_green" max="100" value="100"></progress>
                                 </div>
                                 <div class="progress-row__mini-progress-block mini-progress-block">
                                     <progress class="mini-progress-block__progress-line" max="100" value="0"></progress>
                                 </div>
                                 <div class="progress-row__mini-progress-block mini-progress-block">
-                                    <progress class="mini-progress-block__progress-line" max="100" value="100"></progress>
+                                    <progress class="mini-progress-block__progress-line mini-progress-block__progress-line_green" max="100" value="25"></progress>
                                 </div>
                                 <div class="progress-row__mini-progress-block mini-progress-block">
                                     <progress class="mini-progress-block__progress-line" max="100" value="0"></progress>
                                 </div>
                                 <div class="progress-row__mini-progress-block mini-progress-block">
-                                    <progress class="mini-progress-block__progress-line" max="100" value="50"></progress>
+                                    <progress class="mini-progress-block__progress-line mini-progress-block__progress-line_green" max="100" value="50"></progress>
+                                </div>
+                                <div class="progress-row__mini-progress-block mini-progress-block">
+                                    <progress class="mini-progress-block__progress-line mini-progress-block__progress-line_green" max="100" value="100"></progress>
                                 </div>
                                 <div class="progress-row__mini-progress-block mini-progress-block">
                                     <progress class="mini-progress-block__progress-line" max="100" value="0"></progress>
-                                </div>
-                                <div class="progress-row__mini-progress-block mini-progress-block">
-                                    <progress class="mini-progress-block__progress-line" max="100" value="0"></progress>
-                                </div>
-                                <div class="progress-row__mini-progress-block mini-progress-block">
-                                    <progress class="mini-progress-block__progress-line" max="100" value="100"></progress>
-                                </div>
-                                <div class="progress-row__mini-progress-block mini-progress-block">
-                                    <progress class="mini-progress-block__progress-line" max="100" value="25"></progress>
-                                </div>
-                                <div class="progress-row__mini-progress-block mini-progress-block">
-                                    <progress class="mini-progress-block__progress-line" max="100" value="0"></progress>
-                                </div>
-                                <div class="progress-row__mini-progress-block mini-progress-block">
-                                    <progress class="mini-progress-block__progress-line" max="100" value="50"></progress>
-                                </div>
-                                <div class="progress-row__mini-progress-block mini-progress-block">
-                                    <progress class="mini-progress-block__progress-line" max="100" value="100"></progress>
-                                </div>
-                                <div class="progress-row__mini-progress-block mini-progress-block">
-                                    <progress class="mini-progress-block__progress-line" max="100" value="0"></progress>
-                                </div>
-                                <div class="progress-row__mini-progress-block mini-progress-block">
-                                    <progress class="mini-progress-block__progress-line" max="100" value="100"></progress>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="table-block__progress-row progress-row">
-                        <p class="progress-row__name">Tibo</p>
-                        <div class="progress-row__main">
-                            <div class="progress-row__photo-wrapper">
-                                <img src="assets/img/2.content/progress-row__specialist3.png" alt="" class="progress-row__photo">
-                            </div>
+                        <div class="progress-row__main progress-row__main_full">
+                            <p class="progress-row__numbers">24/02</p>
                             <div class="progress-row__list">
                                 <div class="progress-row__mini-progress-block mini-progress-block">
-                                    <progress class="mini-progress-block__progress-line" max="100" value="100"></progress>
+                                    <progress class="mini-progress-block__progress-line mini-progress-block__progress-line_green" max="100" value="100"></progress>
                                 </div>
                                 <div class="progress-row__mini-progress-block mini-progress-block">
-                                    <progress class="mini-progress-block__progress-line" max="100" value="50"></progress>
+                                    <progress class="mini-progress-block__progress-line mini-progress-block__progress-line_green" max="100" value="50"></progress>
+                                </div>
+                                <div class="progress-row__mini-progress-block mini-progress-block">
+                                    <progress class="mini-progress-block__progress-line mini-progress-block__progress-line_green" max="100" value="25"></progress>
+                                </div>
+                                <div class="progress-row__mini-progress-block mini-progress-block">
+                                    <progress class="mini-progress-block__progress-line" max="100" value="0"></progress>
+                                </div>
+                                <div class="progress-row__mini-progress-block mini-progress-block">
+                                    <progress class="mini-progress-block__progress-line mini-progress-block__progress-line_green" max="100" value="75"></progress>
+                                </div>
+                                <div class="progress-row__mini-progress-block mini-progress-block">
+                                    <progress class="mini-progress-block__progress-line" max="100" value="0"></progress>
+                                </div>
+                                <div class="progress-row__mini-progress-block mini-progress-block">
+                                    <progress class="mini-progress-block__progress-line mini-progress-block__progress-line_green" max="100" value="100"></progress>
+                                </div>
+                                <div class="progress-row__mini-progress-block mini-progress-block">
+                                    <progress class="mini-progress-block__progress-line" max="100" value="0"></progress>
+                                </div>
+                                <div class="progress-row__mini-progress-block mini-progress-block">
+                                    <progress class="mini-progress-block__progress-line mini-progress-block__progress-line_green" max="100" value="0"></progress>
                                 </div>
                                 <div class="progress-row__mini-progress-block mini-progress-block">
                                     <progress class="mini-progress-block__progress-line" max="100" value="25"></progress>
@@ -361,80 +408,77 @@
                                     <progress class="mini-progress-block__progress-line" max="100" value="0"></progress>
                                 </div>
                                 <div class="progress-row__mini-progress-block mini-progress-block">
-                                    <progress class="mini-progress-block__progress-line" max="100" value="75"></progress>
+                                    <progress class="mini-progress-block__progress-line mini-progress-block__progress-line_green" max="100" value="0"></progress>
+                                </div>
+                                <div class="progress-row__mini-progress-block mini-progress-block">
+                                    <progress class="mini-progress-block__progress-line mini-progress-block__progress-line_green" max="100" value="100"></progress>
                                 </div>
                                 <div class="progress-row__mini-progress-block mini-progress-block">
                                     <progress class="mini-progress-block__progress-line" max="100" value="0"></progress>
                                 </div>
                                 <div class="progress-row__mini-progress-block mini-progress-block">
-                                    <progress class="mini-progress-block__progress-line" max="100" value="100"></progress>
+                                    <progress class="mini-progress-block__progress-line mini-progress-block__progress-line_green" max="100" value="50"></progress>
                                 </div>
                                 <div class="progress-row__mini-progress-block mini-progress-block">
                                     <progress class="mini-progress-block__progress-line" max="100" value="0"></progress>
                                 </div>
                                 <div class="progress-row__mini-progress-block mini-progress-block">
-                                    <progress class="mini-progress-block__progress-line" max="100" value="0"></progress>
+                                    <progress class="mini-progress-block__progress-line mini-progress-block__progress-line_green" max="100" value="0"></progress>
                                 </div>
                                 <div class="progress-row__mini-progress-block mini-progress-block">
-                                    <progress class="mini-progress-block__progress-line" max="100" value="25"></progress>
-                                </div>
-                                <div class="progress-row__mini-progress-block mini-progress-block">
-                                    <progress class="mini-progress-block__progress-line" max="100" value="0"></progress>
+                                    <progress class="mini-progress-block__progress-line mini-progress-block__progress-line_green" max="100" value="100"></progress>
                                 </div>
                                 <div class="progress-row__mini-progress-block mini-progress-block">
                                     <progress class="mini-progress-block__progress-line" max="100" value="0"></progress>
                                 </div>
                                 <div class="progress-row__mini-progress-block mini-progress-block">
-                                    <progress class="mini-progress-block__progress-line" max="100" value="100"></progress>
+                                    <progress class="mini-progress-block__progress-line mini-progress-block__progress-line_green" max="100" value="25"></progress>
                                 </div>
                                 <div class="progress-row__mini-progress-block mini-progress-block">
                                     <progress class="mini-progress-block__progress-line" max="100" value="0"></progress>
                                 </div>
                                 <div class="progress-row__mini-progress-block mini-progress-block">
-                                    <progress class="mini-progress-block__progress-line" max="100" value="50"></progress>
+                                    <progress class="mini-progress-block__progress-line mini-progress-block__progress-line_green" max="100" value="50"></progress>
+                                </div>
+                                <div class="progress-row__mini-progress-block mini-progress-block">
+                                    <progress class="mini-progress-block__progress-line mini-progress-block__progress-line_green" max="100" value="100"></progress>
                                 </div>
                                 <div class="progress-row__mini-progress-block mini-progress-block">
                                     <progress class="mini-progress-block__progress-line" max="100" value="0"></progress>
-                                </div>
-                                <div class="progress-row__mini-progress-block mini-progress-block">
-                                    <progress class="mini-progress-block__progress-line" max="100" value="0"></progress>
-                                </div>
-                                <div class="progress-row__mini-progress-block mini-progress-block">
-                                    <progress class="mini-progress-block__progress-line" max="100" value="100"></progress>
-                                </div>
-                                <div class="progress-row__mini-progress-block mini-progress-block">
-                                    <progress class="mini-progress-block__progress-line" max="100" value="25"></progress>
-                                </div>
-                                <div class="progress-row__mini-progress-block mini-progress-block">
-                                    <progress class="mini-progress-block__progress-line" max="100" value="0"></progress>
-                                </div>
-                                <div class="progress-row__mini-progress-block mini-progress-block">
-                                    <progress class="mini-progress-block__progress-line" max="100" value="50"></progress>
-                                </div>
-                                <div class="progress-row__mini-progress-block mini-progress-block">
-                                    <progress class="mini-progress-block__progress-line" max="100" value="100"></progress>
-                                </div>
-                                <div class="progress-row__mini-progress-block mini-progress-block">
-                                    <progress class="mini-progress-block__progress-line" max="100" value="0"></progress>
-                                </div>
-                                <div class="progress-row__mini-progress-block mini-progress-block">
-                                    <progress class="mini-progress-block__progress-line" max="100" value="100"></progress>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="table-block__progress-row progress-row">
-                        <p class="progress-row__name">Didier</p>
-                        <div class="progress-row__main">
-                            <div class="progress-row__photo-wrapper">
-                                <img src="assets/img/2.content/progress-row__specialist4.png" alt="" class="progress-row__photo">
-                            </div>
+                        <div class="progress-row__main progress-row__main_full">
+                            <p class="progress-row__numbers">24/02</p>
                             <div class="progress-row__list">
                                 <div class="progress-row__mini-progress-block mini-progress-block">
-                                    <progress class="mini-progress-block__progress-line" max="100" value="100"></progress>
+                                    <progress class="mini-progress-block__progress-line mini-progress-block__progress-line_green" max="100" value="100"></progress>
                                 </div>
                                 <div class="progress-row__mini-progress-block mini-progress-block">
-                                    <progress class="mini-progress-block__progress-line" max="100" value="50"></progress>
+                                    <progress class="mini-progress-block__progress-line mini-progress-block__progress-line_green" max="100" value="50"></progress>
+                                </div>
+                                <div class="progress-row__mini-progress-block mini-progress-block">
+                                    <progress class="mini-progress-block__progress-line mini-progress-block__progress-line_green" max="100" value="25"></progress>
+                                </div>
+                                <div class="progress-row__mini-progress-block mini-progress-block">
+                                    <progress class="mini-progress-block__progress-line" max="100" value="0"></progress>
+                                </div>
+                                <div class="progress-row__mini-progress-block mini-progress-block">
+                                    <progress class="mini-progress-block__progress-line mini-progress-block__progress-line_green" max="100" value="75"></progress>
+                                </div>
+                                <div class="progress-row__mini-progress-block mini-progress-block">
+                                    <progress class="mini-progress-block__progress-line" max="100" value="0"></progress>
+                                </div>
+                                <div class="progress-row__mini-progress-block mini-progress-block">
+                                    <progress class="mini-progress-block__progress-line mini-progress-block__progress-line_green" max="100" value="100"></progress>
+                                </div>
+                                <div class="progress-row__mini-progress-block mini-progress-block">
+                                    <progress class="mini-progress-block__progress-line" max="100" value="0"></progress>
+                                </div>
+                                <div class="progress-row__mini-progress-block mini-progress-block">
+                                    <progress class="mini-progress-block__progress-line mini-progress-block__progress-line_green" max="100" value="0"></progress>
                                 </div>
                                 <div class="progress-row__mini-progress-block mini-progress-block">
                                     <progress class="mini-progress-block__progress-line" max="100" value="25"></progress>
@@ -443,80 +487,77 @@
                                     <progress class="mini-progress-block__progress-line" max="100" value="0"></progress>
                                 </div>
                                 <div class="progress-row__mini-progress-block mini-progress-block">
-                                    <progress class="mini-progress-block__progress-line" max="100" value="75"></progress>
+                                    <progress class="mini-progress-block__progress-line mini-progress-block__progress-line_green" max="100" value="0"></progress>
+                                </div>
+                                <div class="progress-row__mini-progress-block mini-progress-block">
+                                    <progress class="mini-progress-block__progress-line mini-progress-block__progress-line_green" max="100" value="100"></progress>
                                 </div>
                                 <div class="progress-row__mini-progress-block mini-progress-block">
                                     <progress class="mini-progress-block__progress-line" max="100" value="0"></progress>
                                 </div>
                                 <div class="progress-row__mini-progress-block mini-progress-block">
-                                    <progress class="mini-progress-block__progress-line" max="100" value="100"></progress>
+                                    <progress class="mini-progress-block__progress-line mini-progress-block__progress-line_green" max="100" value="50"></progress>
                                 </div>
                                 <div class="progress-row__mini-progress-block mini-progress-block">
                                     <progress class="mini-progress-block__progress-line" max="100" value="0"></progress>
                                 </div>
                                 <div class="progress-row__mini-progress-block mini-progress-block">
-                                    <progress class="mini-progress-block__progress-line" max="100" value="0"></progress>
+                                    <progress class="mini-progress-block__progress-line mini-progress-block__progress-line_green" max="100" value="0"></progress>
                                 </div>
                                 <div class="progress-row__mini-progress-block mini-progress-block">
-                                    <progress class="mini-progress-block__progress-line" max="100" value="25"></progress>
-                                </div>
-                                <div class="progress-row__mini-progress-block mini-progress-block">
-                                    <progress class="mini-progress-block__progress-line" max="100" value="0"></progress>
+                                    <progress class="mini-progress-block__progress-line mini-progress-block__progress-line_green" max="100" value="100"></progress>
                                 </div>
                                 <div class="progress-row__mini-progress-block mini-progress-block">
                                     <progress class="mini-progress-block__progress-line" max="100" value="0"></progress>
                                 </div>
                                 <div class="progress-row__mini-progress-block mini-progress-block">
-                                    <progress class="mini-progress-block__progress-line" max="100" value="100"></progress>
+                                    <progress class="mini-progress-block__progress-line mini-progress-block__progress-line_green" max="100" value="25"></progress>
                                 </div>
                                 <div class="progress-row__mini-progress-block mini-progress-block">
                                     <progress class="mini-progress-block__progress-line" max="100" value="0"></progress>
                                 </div>
                                 <div class="progress-row__mini-progress-block mini-progress-block">
-                                    <progress class="mini-progress-block__progress-line" max="100" value="50"></progress>
+                                    <progress class="mini-progress-block__progress-line mini-progress-block__progress-line_green" max="100" value="50"></progress>
+                                </div>
+                                <div class="progress-row__mini-progress-block mini-progress-block">
+                                    <progress class="mini-progress-block__progress-line mini-progress-block__progress-line_green" max="100" value="100"></progress>
                                 </div>
                                 <div class="progress-row__mini-progress-block mini-progress-block">
                                     <progress class="mini-progress-block__progress-line" max="100" value="0"></progress>
-                                </div>
-                                <div class="progress-row__mini-progress-block mini-progress-block">
-                                    <progress class="mini-progress-block__progress-line" max="100" value="0"></progress>
-                                </div>
-                                <div class="progress-row__mini-progress-block mini-progress-block">
-                                    <progress class="mini-progress-block__progress-line" max="100" value="100"></progress>
-                                </div>
-                                <div class="progress-row__mini-progress-block mini-progress-block">
-                                    <progress class="mini-progress-block__progress-line" max="100" value="25"></progress>
-                                </div>
-                                <div class="progress-row__mini-progress-block mini-progress-block">
-                                    <progress class="mini-progress-block__progress-line" max="100" value="0"></progress>
-                                </div>
-                                <div class="progress-row__mini-progress-block mini-progress-block">
-                                    <progress class="mini-progress-block__progress-line" max="100" value="50"></progress>
-                                </div>
-                                <div class="progress-row__mini-progress-block mini-progress-block">
-                                    <progress class="mini-progress-block__progress-line" max="100" value="100"></progress>
-                                </div>
-                                <div class="progress-row__mini-progress-block mini-progress-block">
-                                    <progress class="mini-progress-block__progress-line" max="100" value="0"></progress>
-                                </div>
-                                <div class="progress-row__mini-progress-block mini-progress-block">
-                                    <progress class="mini-progress-block__progress-line" max="100" value="100"></progress>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="table-block__progress-row progress-row">
-                        <p class="progress-row__name">Frederic</p>
-                        <div class="progress-row__main">
-                            <div class="progress-row__photo-wrapper">
-                                <img src="assets/img/2.content/progress-row__specialist5.png" alt="" class="progress-row__photo">
-                            </div>
+                        <div class="progress-row__main progress-row__main_full">
+                            <p class="progress-row__numbers">24/02</p>
                             <div class="progress-row__list">
                                 <div class="progress-row__mini-progress-block mini-progress-block">
-                                    <progress class="mini-progress-block__progress-line" max="100" value="100"></progress>
+                                    <progress class="mini-progress-block__progress-line mini-progress-block__progress-line_green" max="100" value="100"></progress>
                                 </div>
                                 <div class="progress-row__mini-progress-block mini-progress-block">
-                                    <progress class="mini-progress-block__progress-line" max="100" value="50"></progress>
+                                    <progress class="mini-progress-block__progress-line mini-progress-block__progress-line_green" max="100" value="50"></progress>
+                                </div>
+                                <div class="progress-row__mini-progress-block mini-progress-block">
+                                    <progress class="mini-progress-block__progress-line mini-progress-block__progress-line_green" max="100" value="25"></progress>
+                                </div>
+                                <div class="progress-row__mini-progress-block mini-progress-block">
+                                    <progress class="mini-progress-block__progress-line" max="100" value="0"></progress>
+                                </div>
+                                <div class="progress-row__mini-progress-block mini-progress-block">
+                                    <progress class="mini-progress-block__progress-line mini-progress-block__progress-line_green" max="100" value="75"></progress>
+                                </div>
+                                <div class="progress-row__mini-progress-block mini-progress-block">
+                                    <progress class="mini-progress-block__progress-line" max="100" value="0"></progress>
+                                </div>
+                                <div class="progress-row__mini-progress-block mini-progress-block">
+                                    <progress class="mini-progress-block__progress-line mini-progress-block__progress-line_green" max="100" value="100"></progress>
+                                </div>
+                                <div class="progress-row__mini-progress-block mini-progress-block">
+                                    <progress class="mini-progress-block__progress-line" max="100" value="0"></progress>
+                                </div>
+                                <div class="progress-row__mini-progress-block mini-progress-block">
+                                    <progress class="mini-progress-block__progress-line mini-progress-block__progress-line_green" max="100" value="0"></progress>
                                 </div>
                                 <div class="progress-row__mini-progress-block mini-progress-block">
                                     <progress class="mini-progress-block__progress-line" max="100" value="25"></progress>
@@ -525,80 +566,77 @@
                                     <progress class="mini-progress-block__progress-line" max="100" value="0"></progress>
                                 </div>
                                 <div class="progress-row__mini-progress-block mini-progress-block">
-                                    <progress class="mini-progress-block__progress-line" max="100" value="75"></progress>
+                                    <progress class="mini-progress-block__progress-line mini-progress-block__progress-line_green" max="100" value="0"></progress>
+                                </div>
+                                <div class="progress-row__mini-progress-block mini-progress-block">
+                                    <progress class="mini-progress-block__progress-line mini-progress-block__progress-line_green" max="100" value="100"></progress>
                                 </div>
                                 <div class="progress-row__mini-progress-block mini-progress-block">
                                     <progress class="mini-progress-block__progress-line" max="100" value="0"></progress>
                                 </div>
                                 <div class="progress-row__mini-progress-block mini-progress-block">
-                                    <progress class="mini-progress-block__progress-line" max="100" value="100"></progress>
+                                    <progress class="mini-progress-block__progress-line mini-progress-block__progress-line_green" max="100" value="50"></progress>
                                 </div>
                                 <div class="progress-row__mini-progress-block mini-progress-block">
                                     <progress class="mini-progress-block__progress-line" max="100" value="0"></progress>
                                 </div>
                                 <div class="progress-row__mini-progress-block mini-progress-block">
-                                    <progress class="mini-progress-block__progress-line" max="100" value="0"></progress>
+                                    <progress class="mini-progress-block__progress-line mini-progress-block__progress-line_green" max="100" value="0"></progress>
                                 </div>
                                 <div class="progress-row__mini-progress-block mini-progress-block">
-                                    <progress class="mini-progress-block__progress-line" max="100" value="25"></progress>
-                                </div>
-                                <div class="progress-row__mini-progress-block mini-progress-block">
-                                    <progress class="mini-progress-block__progress-line" max="100" value="0"></progress>
+                                    <progress class="mini-progress-block__progress-line mini-progress-block__progress-line_green" max="100" value="100"></progress>
                                 </div>
                                 <div class="progress-row__mini-progress-block mini-progress-block">
                                     <progress class="mini-progress-block__progress-line" max="100" value="0"></progress>
                                 </div>
                                 <div class="progress-row__mini-progress-block mini-progress-block">
-                                    <progress class="mini-progress-block__progress-line" max="100" value="100"></progress>
+                                    <progress class="mini-progress-block__progress-line mini-progress-block__progress-line_green" max="100" value="25"></progress>
                                 </div>
                                 <div class="progress-row__mini-progress-block mini-progress-block">
                                     <progress class="mini-progress-block__progress-line" max="100" value="0"></progress>
                                 </div>
                                 <div class="progress-row__mini-progress-block mini-progress-block">
-                                    <progress class="mini-progress-block__progress-line" max="100" value="50"></progress>
+                                    <progress class="mini-progress-block__progress-line mini-progress-block__progress-line_green" max="100" value="50"></progress>
+                                </div>
+                                <div class="progress-row__mini-progress-block mini-progress-block">
+                                    <progress class="mini-progress-block__progress-line mini-progress-block__progress-line_green" max="100" value="100"></progress>
                                 </div>
                                 <div class="progress-row__mini-progress-block mini-progress-block">
                                     <progress class="mini-progress-block__progress-line" max="100" value="0"></progress>
-                                </div>
-                                <div class="progress-row__mini-progress-block mini-progress-block">
-                                    <progress class="mini-progress-block__progress-line" max="100" value="0"></progress>
-                                </div>
-                                <div class="progress-row__mini-progress-block mini-progress-block">
-                                    <progress class="mini-progress-block__progress-line" max="100" value="100"></progress>
-                                </div>
-                                <div class="progress-row__mini-progress-block mini-progress-block">
-                                    <progress class="mini-progress-block__progress-line" max="100" value="25"></progress>
-                                </div>
-                                <div class="progress-row__mini-progress-block mini-progress-block">
-                                    <progress class="mini-progress-block__progress-line" max="100" value="0"></progress>
-                                </div>
-                                <div class="progress-row__mini-progress-block mini-progress-block">
-                                    <progress class="mini-progress-block__progress-line" max="100" value="50"></progress>
-                                </div>
-                                <div class="progress-row__mini-progress-block mini-progress-block">
-                                    <progress class="mini-progress-block__progress-line" max="100" value="100"></progress>
-                                </div>
-                                <div class="progress-row__mini-progress-block mini-progress-block">
-                                    <progress class="mini-progress-block__progress-line" max="100" value="0"></progress>
-                                </div>
-                                <div class="progress-row__mini-progress-block mini-progress-block">
-                                    <progress class="mini-progress-block__progress-line" max="100" value="100"></progress>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="table-block__progress-row progress-row">
-                        <p class="progress-row__name">Karla</p>
-                        <div class="progress-row__main">
-                            <div class="progress-row__photo-wrapper">
-                                <img src="assets/img/2.content/progress-row__specialist6.png" alt="" class="progress-row__photo">
-                            </div>
+                        <div class="progress-row__main progress-row__main_full">
+                            <p class="progress-row__numbers">24/02</p>
                             <div class="progress-row__list">
                                 <div class="progress-row__mini-progress-block mini-progress-block">
-                                    <progress class="mini-progress-block__progress-line" max="100" value="100"></progress>
+                                    <progress class="mini-progress-block__progress-line mini-progress-block__progress-line_green" max="100" value="100"></progress>
                                 </div>
                                 <div class="progress-row__mini-progress-block mini-progress-block">
-                                    <progress class="mini-progress-block__progress-line" max="100" value="50"></progress>
+                                    <progress class="mini-progress-block__progress-line mini-progress-block__progress-line_green" max="100" value="50"></progress>
+                                </div>
+                                <div class="progress-row__mini-progress-block mini-progress-block">
+                                    <progress class="mini-progress-block__progress-line mini-progress-block__progress-line_green" max="100" value="25"></progress>
+                                </div>
+                                <div class="progress-row__mini-progress-block mini-progress-block">
+                                    <progress class="mini-progress-block__progress-line" max="100" value="0"></progress>
+                                </div>
+                                <div class="progress-row__mini-progress-block mini-progress-block">
+                                    <progress class="mini-progress-block__progress-line mini-progress-block__progress-line_green" max="100" value="75"></progress>
+                                </div>
+                                <div class="progress-row__mini-progress-block mini-progress-block">
+                                    <progress class="mini-progress-block__progress-line" max="100" value="0"></progress>
+                                </div>
+                                <div class="progress-row__mini-progress-block mini-progress-block">
+                                    <progress class="mini-progress-block__progress-line mini-progress-block__progress-line_green" max="100" value="100"></progress>
+                                </div>
+                                <div class="progress-row__mini-progress-block mini-progress-block">
+                                    <progress class="mini-progress-block__progress-line" max="100" value="0"></progress>
+                                </div>
+                                <div class="progress-row__mini-progress-block mini-progress-block">
+                                    <progress class="mini-progress-block__progress-line mini-progress-block__progress-line_green" max="100" value="0"></progress>
                                 </div>
                                 <div class="progress-row__mini-progress-block mini-progress-block">
                                     <progress class="mini-progress-block__progress-line" max="100" value="25"></progress>
@@ -607,70 +645,50 @@
                                     <progress class="mini-progress-block__progress-line" max="100" value="0"></progress>
                                 </div>
                                 <div class="progress-row__mini-progress-block mini-progress-block">
-                                    <progress class="mini-progress-block__progress-line" max="100" value="75"></progress>
+                                    <progress class="mini-progress-block__progress-line mini-progress-block__progress-line_green" max="100" value="0"></progress>
+                                </div>
+                                <div class="progress-row__mini-progress-block mini-progress-block">
+                                    <progress class="mini-progress-block__progress-line mini-progress-block__progress-line_green" max="100" value="100"></progress>
                                 </div>
                                 <div class="progress-row__mini-progress-block mini-progress-block">
                                     <progress class="mini-progress-block__progress-line" max="100" value="0"></progress>
                                 </div>
                                 <div class="progress-row__mini-progress-block mini-progress-block">
-                                    <progress class="mini-progress-block__progress-line" max="100" value="100"></progress>
+                                    <progress class="mini-progress-block__progress-line mini-progress-block__progress-line_green" max="100" value="50"></progress>
                                 </div>
                                 <div class="progress-row__mini-progress-block mini-progress-block">
                                     <progress class="mini-progress-block__progress-line" max="100" value="0"></progress>
                                 </div>
                                 <div class="progress-row__mini-progress-block mini-progress-block">
-                                    <progress class="mini-progress-block__progress-line" max="100" value="0"></progress>
+                                    <progress class="mini-progress-block__progress-line mini-progress-block__progress-line_green" max="100" value="0"></progress>
                                 </div>
                                 <div class="progress-row__mini-progress-block mini-progress-block">
-                                    <progress class="mini-progress-block__progress-line" max="100" value="25"></progress>
-                                </div>
-                                <div class="progress-row__mini-progress-block mini-progress-block">
-                                    <progress class="mini-progress-block__progress-line" max="100" value="0"></progress>
+                                    <progress class="mini-progress-block__progress-line mini-progress-block__progress-line_green" max="100" value="100"></progress>
                                 </div>
                                 <div class="progress-row__mini-progress-block mini-progress-block">
                                     <progress class="mini-progress-block__progress-line" max="100" value="0"></progress>
                                 </div>
                                 <div class="progress-row__mini-progress-block mini-progress-block">
-                                    <progress class="mini-progress-block__progress-line" max="100" value="100"></progress>
+                                    <progress class="mini-progress-block__progress-line mini-progress-block__progress-line_green" max="100" value="25"></progress>
                                 </div>
                                 <div class="progress-row__mini-progress-block mini-progress-block">
                                     <progress class="mini-progress-block__progress-line" max="100" value="0"></progress>
                                 </div>
                                 <div class="progress-row__mini-progress-block mini-progress-block">
-                                    <progress class="mini-progress-block__progress-line" max="100" value="50"></progress>
+                                    <progress class="mini-progress-block__progress-line mini-progress-block__progress-line_green" max="100" value="50"></progress>
+                                </div>
+                                <div class="progress-row__mini-progress-block mini-progress-block">
+                                    <progress class="mini-progress-block__progress-line mini-progress-block__progress-line_green" max="100" value="100"></progress>
                                 </div>
                                 <div class="progress-row__mini-progress-block mini-progress-block">
                                     <progress class="mini-progress-block__progress-line" max="100" value="0"></progress>
-                                </div>
-                                <div class="progress-row__mini-progress-block mini-progress-block">
-                                    <progress class="mini-progress-block__progress-line" max="100" value="0"></progress>
-                                </div>
-                                <div class="progress-row__mini-progress-block mini-progress-block">
-                                    <progress class="mini-progress-block__progress-line" max="100" value="100"></progress>
-                                </div>
-                                <div class="progress-row__mini-progress-block mini-progress-block">
-                                    <progress class="mini-progress-block__progress-line" max="100" value="25"></progress>
-                                </div>
-                                <div class="progress-row__mini-progress-block mini-progress-block">
-                                    <progress class="mini-progress-block__progress-line" max="100" value="0"></progress>
-                                </div>
-                                <div class="progress-row__mini-progress-block mini-progress-block">
-                                    <progress class="mini-progress-block__progress-line" max="100" value="50"></progress>
-                                </div>
-                                <div class="progress-row__mini-progress-block mini-progress-block">
-                                    <progress class="mini-progress-block__progress-line" max="100" value="100"></progress>
-                                </div>
-                                <div class="progress-row__mini-progress-block mini-progress-block">
-                                    <progress class="mini-progress-block__progress-line" max="100" value="0"></progress>
-                                </div>
-                                <div class="progress-row__mini-progress-block mini-progress-block">
-                                    <progress class="mini-progress-block__progress-line" max="100" value="100"></progress>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <button class="table-block__button block__button">Voir plus</button>
         </div>
         <!-- /Table Block -->
 
@@ -678,7 +696,7 @@
         <div class="block comment-block">
             <div class="comment-block__top">
                 <p class="comment-block__title tl_title">Commentaires</p>
-                <button class="block__button block__button_comment-top">Donner des commentaires</button>
+                <button class="block__button block__button_comment-top" data-popup-name="popup_reaction">Donner des commentaires</button>
             </div>
             <div class="comment-block__comment-list">
                 <div class="comment-block__comment-list-item comment">
@@ -703,12 +721,12 @@
                     <div class="comment__item-meta">
                         <p class="comment__username">Monica</p>
                         <p class="comment__date">Sam. 02/02 Par lina</p>
-                        <div class="comment__rating">
-                            <span class="comment__star comment__star_active"></span>
-                            <span class="comment__star comment__star_active"></span>
-                            <span class="comment__star comment__star_active"></span>
-                            <span class="comment__star comment__star_active"></span>
-                            <span class="comment__star"></span>
+                        <div class="comment__rating rating">
+                             <span class="rating__star rating__star_active"></span>
+                             <span class="rating__star rating__star_active"></span>
+                             <span class="rating__star rating__star_active"></span>
+                             <span class="rating__star rating__star_active"></span>
+                            <span class="rating__star"></span>
                         </div>
                     </div>
                     <p class="comment__text-block">
@@ -721,12 +739,12 @@
                     <div class="comment__item-meta">
                         <p class="comment__username">Monica</p>
                         <p class="comment__date">Sam. 02/02 Par lina</p>
-                        <div class="comment__rating">
-                            <span class="comment__star comment__star_active"></span>
-                            <span class="comment__star comment__star_active"></span>
-                            <span class="comment__star comment__star_active"></span>
-                            <span class="comment__star comment__star_active"></span>
-                            <span class="comment__star"></span>
+                        <div class="comment__rating rating">
+                             <span class="rating__star rating__star_active"></span>
+                             <span class="rating__star rating__star_active"></span>
+                             <span class="rating__star rating__star_active"></span>
+                             <span class="rating__star rating__star_active"></span>
+                            <span class="rating__star"></span>
                         </div>
                     </div>
                     <p class="comment__text-block">
@@ -739,12 +757,12 @@
                     <div class="comment__item-meta">
                         <p class="comment__username">Monica</p>
                         <p class="comment__date">Sam. 02/02 Par lina</p>
-                        <div class="comment__rating">
-                            <span class="comment__star comment__star_active"></span>
-                            <span class="comment__star comment__star_active"></span>
-                            <span class="comment__star comment__star_active"></span>
-                            <span class="comment__star comment__star_active"></span>
-                            <span class="comment__star"></span>
+                        <div class="comment__rating rating">
+                             <span class="rating__star rating__star_active"></span>
+                             <span class="rating__star rating__star_active"></span>
+                             <span class="rating__star rating__star_active"></span>
+                             <span class="rating__star rating__star_active"></span>
+                            <span class="rating__star"></span>
                         </div>
                     </div>
                     <p class="comment__text-block">
@@ -842,6 +860,33 @@
             <button class="popup__button popup__button_agree" data-popup-close>Enregistrer mes préférences</button>
             <button class="popup__button popup__button_more">En savoir plus</button>
         </div>
+    </div>
+</div>
+<div class="popup-wrapper">
+    <div class="popup popup_reaction">
+        <div class="popup__close popup__close_mobile-arrow" data-popup-close></div>
+        <p class="popup__title">Vos réactions</p>
+        <div class="popup__rating rating">
+            <span class="rating__star rating__star_active"></span>
+            <span class="rating__star rating__star_active"></span>
+            <span class="rating__star rating__star_active"></span>
+            <span class="rating__star rating__star_active"></span>
+            <span class="rating__star"></span>
+        </div>
+        <div class="block form-block form-block_popup">
+            <input type="text" class="form-block__input" placeholder="Votre nom">
+            <input type="text" class="form-block__input" placeholder="Votre numéro de téléphone">
+            <textarea type="text" class="form-block__input form-block__input_textarea" placeholder="Commentaires"></textarea>
+            <button type="submit" class="block__button block__button_from-block" data-popup-close data-popup-name="popup_form-thanks">Envoyer</button>
+        </div>
+    </div>
+</div>
+<div class="popup-wrapper">
+    <div class="popup popup_form-thanks">
+        <div class="popup__close popup__close_mobile-arrow" data-popup-close></div>
+        <div class="popup__title">Merci pour vos commentaires!</div>
+        <p class="popup__text">Il sera publié après examen par un modérateur.</p>
+        <button class="popup__button popup__button_thanks" data-popup-close>Ok</button>
     </div>
 </div>
 

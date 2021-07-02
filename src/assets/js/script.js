@@ -8,6 +8,8 @@ document.addEventListener('DOMContentLoaded', () => {
     findCustomSelect()
 
     addMobileMenuHandler()
+
+    addFavorite()
 })
 
 
@@ -17,9 +19,17 @@ function findOpenPopupsElements() {
             popup = document.querySelector(`.${popupName}`)
         currentOpenPopupElement.addEventListener('click', event => {
             event.preventDefault()
-            $(popup).fadeIn()
-            $(popup).css('display', 'flex')
-            popup.classList.add('popup-active')
+            if (popup.parentElement.classList.contains('popup-wrapper')) {
+                $(popup.parentElement).fadeIn()
+                document.body.style.overflow = 'hidden'
+                $(popup).fadeIn()
+                $(popup).css('display', 'flex')
+                popup.classList.add('popup-active')
+            } else {
+                $(popup).fadeIn()
+                $(popup).css('display', 'flex')
+                popup.classList.add('popup-active')
+            }
         })
     })
 }
@@ -88,10 +98,20 @@ function addMobileMenuHandler() {
         burgerMenu.classList.toggle('burger-menu_active')
         menu.classList.toggle('main-menu_active')
 
-        if (menu.classList.contains('main-menu_active')){
+        if (menu.classList.contains('main-menu_active')) {
             document.body.style.overflow = 'hidden'
-        }else {
+        } else {
             document.body.style.overflow = ''
         }
     })
+}
+
+function addFavorite() {
+    if (document.querySelectorAll('.favoris-row__img-culumn-subtitle') !== null) {
+        document.querySelectorAll('.favoris-row__img-culumn-subtitle').forEach(favorite => {
+            favorite.addEventListener('click', () => {
+                favorite.classList.toggle('favoris-row__img-culumn-subtitle_active')
+            })
+        })
+    }
 }

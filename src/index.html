@@ -24,86 +24,88 @@
 <div class="wrapper">
     @@include('_header.html')
 
-    <div class="content">
-        <div class="block block_first-page-block voyance-block">
-            <div class="voyance-title-row">
-                <div class="voyance-title-block">
-                    <p class="voyance-title">Voyance <br> en direct</p>
-                    <p class="voyance-title__subtitle">sans attente <span>&</span> sans cb</p>
+    <div class="block block_first-page-block voyance-block">
+        <div class="voyance-title-row">
+            <div class="voyance-title-block">
+                <p class="voyance-title">Voyance <br> en direct</p>
+                <p class="voyance-title__subtitle">sans attente <span>&</span> sans cb</p>
+            </div>
+            <div class="voyance-img-block">
+                <div class="wrapper-voyance-img__main">
+                    <img src="assets/img/2.content/background_voyance.png" alt="" class="voyance-img__main">
+                    <img src="assets/img/2.content/orange-shape.svg" alt="" class="voyance-img__svg-1">
+                    <img src="assets/img/2.content/green-shape.svg" alt="" class="voyance-img__svg-2">
+                    <img src="assets/img/2.content/gray-shape.svg" alt="" class="voyance-img__svg-3">
                 </div>
-                <div class="voyance-img-block">
-                    <div class="wrapper-voyance-img__main">
-                        <img src="assets/img/2.content/background_voyance.png" alt="" class="voyance-img__main">
-                        <img src="assets/img/2.content/orange-shape.svg" alt="" class="voyance-img__svg-1">
-                        <img src="assets/img/2.content/green-shape.svg" alt="" class="voyance-img__svg-2">
-                        <img src="assets/img/2.content/gray-shape.svg" alt="" class="voyance-img__svg-3">
+            </div>
+        </div>
+        <form class="voyance-search-block">
+            <div class="voyance-search__header">
+                <div class="voyance-search__header-element">Actuellement en audiotel</div>
+
+                <div class="voyance-search__header-element">Actuellement en privé</div>
+
+                <div class="voyance-search__header-element">Les nouveaux voyants</div>
+
+                <div class="voyance-search__header-element">Tous nos <br> voyants</div>
+            </div>
+            <div class="voyance-search__body">
+                <span class="block__img-shape block__img-shape_voyance-search"></span>
+                <div class="wrapper-voyance-search__row">
+                    <input placeholder="Recherchez un voyant par ses compétences et trouvez son numéro d'appel (remplissez un ou plusieurs champs)"
+                           type="search" name="search" class="voyance-search__row">
+                    <button class="wrapper-voyance-search__row-setting-img" data-popup-name="popup_settings">
+                        <img src="assets/img/2.content/search_row_setting.svg" alt="" class="voyance-search__row-setting-img">
+                    </button>
+                    <button type="submit" class="search-submit-button search-submit-button_start-search"></button>
+                </div>
+                <div class="voyance-search__block-list">
+                    <div class="wrapper-voyance-search__row-checkbox">
+                        <div class="wrapper-voyance-search__row-checkbox-element">
+                            <input name="checkbox-medium" type="checkbox" class="voyance-search__checkbox">
+                            <label for="" class="voyance-search__label">
+                                <p class="voyance-search__checkbox-text">Médium</p>
+                            </label>
+                        </div>
+                        <div class="wrapper-voyance-search__row-checkbox-element">
+                            <input name="checkbox-tarologue" type="checkbox" class="voyance-search__checkbox">
+                            <label for="" class="voyance-search__label">
+                                <p class="voyance-search__checkbox-text">Tarologue</p>
+                            </label>
+                        </div>
+                        <div class="wrapper-voyance-search__row-checkbox-element">
+                            <input name="checkbox-mumerologue" type="checkbox" class="voyance-search__checkbox">
+                            <label for="" class="voyance-search__label">
+                                <p class="voyance-search__checkbox-text">Numérologue</p>
+                            </label>
+                        </div>
+                        <div class="wrapper-voyance-search__row-checkbox-element">
+                            <input name="checkbox-astrologue" type="checkbox" class="voyance-search__checkbox">
+                            <label for="" class="voyance-search__label">
+                                <p class="voyance-search__checkbox-text">Astrologue</p>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="custom-select">
+                        <p class="custom-select__choose-item" data-popup-name="popup_select">Trier</p>
+                        <div class="popup popup_select">
+                            <p class="popup__select-item" data-popup-close>Sur Les Appels Reçus</p>
+                            <p class="popup__select-item" data-popup-close>Par Classement</p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <form class="voyance-search-block">
-                <div class="voyance-search__header">
-                    <div class="voyance-search__header-element">Actuellement en audiotel</div>
+        </form>
+    </div>
 
-                    <div class="voyance-search__header-element">Actuellement en privé</div>
-
-                    <div class="voyance-search__header-element">Les nouveaux voyants</div>
-
-                    <div class="voyance-search__header-element">Tous nos <br> voyants</div>
-                </div>
-                <div class="voyance-search__body">
-                    <div class="wrapper-voyance-search__row">
-                        <input placeholder="Recherchez un voyant par ses compétences et trouvez son numéro d'appel (remplissez un ou plusieurs champs)"
-                               type="search" name="search" class="voyance-search__row">
-                        <button class="wrapper-voyance-search__row-setting-img">
-                            <img src="assets/img/2.content/search_row_setting.svg" alt="" class="voyance-search__row-setting-img">
-                        </button>
-                        <button type="submit" class="search-submit-button search-submit-button_start-search"></button>
-                    </div>
-                    <div class="voyance-search__block-list">
-                        <div class="wrapper-voyance-search__row-checkbox">
-                            <div class="wrapper-voyance-search__row-checkbox-element">
-                                <input name="checkbox-medium" type="checkbox" class="voyance-search__checkbox">
-                                <label for="" class="voyance-search__label">
-                                    <p class="voyance-search__checkbox-text">Médium</p>
-                                </label>
-                            </div>
-                            <div class="wrapper-voyance-search__row-checkbox-element">
-                                <input name="checkbox-tarologue" type="checkbox" class="voyance-search__checkbox">
-                                <label for="" class="voyance-search__label">
-                                    <p class="voyance-search__checkbox-text">Tarologue</p>
-                                </label>
-                            </div>
-                            <div class="wrapper-voyance-search__row-checkbox-element">
-                                <input name="checkbox-mumerologue" type="checkbox" class="voyance-search__checkbox">
-                                <label for="" class="voyance-search__label">
-                                    <p class="voyance-search__checkbox-text">Numérologue</p>
-                                </label>
-                            </div>
-                            <div class="wrapper-voyance-search__row-checkbox-element">
-                                <input name="checkbox-astrologue" type="checkbox" class="voyance-search__checkbox">
-                                <label for="" class="voyance-search__label">
-                                    <p class="voyance-search__checkbox-text">Astrologue</p>
-                                </label>
-                            </div>
-                        </div>
-                        <div class="custom-select">
-                            <p class="custom-select__choose-item" data-popup-name="popup_select">Trier</p>
-                            <div class="popup popup_select">
-                                <p class="popup__select-item" data-popup-close>Sur Les Appels Reçus</p>
-                                <p class="popup__select-item" data-popup-close>Par Classement</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </form>
-        </div>
+    <div class="content">
         <div class="favoris-block">
             <div class="favoris-row">
                 <div class="favoris-row__element">
                     <div class="favoris-row__img-culumn">
                         <img src="assets/img/2.content/favoris_element_1.png" alt="" class="favoris-row__img-culumn-img">
                         <div class="favoris-row__img-culumn-subtitle">
-                            <img src="assets/img/2.content/favoris_element_icon.svg" alt="" class="favoris-row__img-culumn-subtitle-img">
+                            <div class="favoris-row__img-culumn-subtitle-img"></div>
                             <p class="favoris-row__img-culumn-subtitle-text">Ajouter aux Favoris</p>
                         </div>
                     </div>
@@ -119,7 +121,6 @@
                         </div>
                         <div class="favoris-row__text-column-phone">
                             <div class="favoris-row__text-column-phone-button">
-                               
                             </div>
                             <div class="favoris-row__text-column-text">
                                 <p>0891 538 538</p>
@@ -133,7 +134,7 @@
                     <div class="favoris-row__img-culumn">
                         <img src="assets/img/2.content/favoris_element_2.png" alt="" class="favoris-row__img-culumn-img">
                         <div class="favoris-row__img-culumn-subtitle">
-                            <img src="assets/img/2.content/favoris_element_icon.svg" alt="" class="favoris-row__img-culumn-subtitle-img">
+                            <div class="favoris-row__img-culumn-subtitle-img"></div>
                             <p class="favoris-row__img-culumn-subtitle-text">Ajouter aux Favoris</p>
                         </div>
                     </div>
@@ -163,7 +164,7 @@
                     <div class="favoris-row__img-culumn">
                         <img src="assets/img/2.content/favoris_element_3.png" alt="" class="favoris-row__img-culumn-img">
                         <div class="favoris-row__img-culumn-subtitle">
-                            <img src="assets/img/2.content/favoris_element_icon.svg" alt="" class="favoris-row__img-culumn-subtitle-img">
+                            <div class="favoris-row__img-culumn-subtitle-img"></div>
                             <p class="favoris-row__img-culumn-subtitle-text">Ajouter aux Favoris</p>
                         </div>
                     </div>
@@ -202,7 +203,7 @@
                     <div class="favoris-row__img-culumn">
                         <img src="assets/img/2.content/favoris_element_4.png" alt="" class="favoris-row__img-culumn-img">
                         <div class="favoris-row__img-culumn-subtitle">
-                            <img src="assets/img/2.content/favoris_element_icon.svg" alt="" class="favoris-row__img-culumn-subtitle-img">
+                            <div class="favoris-row__img-culumn-subtitle-img"></div>
                             <p class="favoris-row__img-culumn-subtitle-text">Ajouter aux Favoris</p>
                         </div>
 
@@ -242,7 +243,7 @@
                     <div class="favoris-row__img-culumn">
                         <img src="assets/img/2.content/favoris_element_5.png" alt="" class="favoris-row__img-culumn-img">
                         <div class="favoris-row__img-culumn-subtitle">
-                            <img src="assets/img/2.content/favoris_element_icon.svg" alt="" class="favoris-row__img-culumn-subtitle-img">
+                            <div class="favoris-row__img-culumn-subtitle-img"></div>
                             <p class="favoris-row__img-culumn-subtitle-text">Ajouter aux Favoris</p>
                         </div>
 
@@ -282,7 +283,7 @@
                     <div class="favoris-row__img-culumn">
                         <img src="assets/img/2.content/favoris_element_6.png" alt="" class="favoris-row__img-culumn-img">
                         <div class="favoris-row__img-culumn-subtitle">
-                            <img src="assets/img/2.content/favoris_element_icon.svg" alt="" class="favoris-row__img-culumn-subtitle-img">
+                            <div class="favoris-row__img-culumn-subtitle-img"></div>
                             <p class="favoris-row__img-culumn-subtitle-text">Ajouter aux Favoris</p>
                         </div>
 
@@ -322,7 +323,7 @@
                     <div class="favoris-row__img-culumn">
                         <img src="assets/img/2.content/favoris_element_7.png" alt="" class="favoris-row__img-culumn-img">
                         <div class="favoris-row__img-culumn-subtitle">
-                            <img src="assets/img/2.content/favoris_element_icon.svg" alt="" class="favoris-row__img-culumn-subtitle-img">
+                            <div class="favoris-row__img-culumn-subtitle-img"></div>
                             <p class="favoris-row__img-culumn-subtitle-text">Ajouter aux Favoris</p>
                         </div>
 
@@ -362,7 +363,7 @@
                     <div class="favoris-row__img-culumn">
                         <img src="assets/img/2.content/favoris_element_8.png" alt="" class="favoris-row__img-culumn-img">
                         <div class="favoris-row__img-culumn-subtitle">
-                            <img src="assets/img/2.content/favoris_element_icon.svg" alt="" class="favoris-row__img-culumn-subtitle-img">
+                            <div class="favoris-row__img-culumn-subtitle-img"></div>
                             <p class="favoris-row__img-culumn-subtitle-text">Ajouter aux Favoris</p>
                         </div>
 
@@ -402,7 +403,7 @@
                     <div class="favoris-row__img-culumn">
                         <img src="assets/img/2.content/favoris_element_9.png" alt="" class="favoris-row__img-culumn-img">
                         <div class="favoris-row__img-culumn-subtitle">
-                            <img src="assets/img/2.content/favoris_element_icon.svg" alt="" class="favoris-row__img-culumn-subtitle-img">
+                            <div class="favoris-row__img-culumn-subtitle-img"></div>
                             <p class="favoris-row__img-culumn-subtitle-text">Ajouter aux Favoris</p>
                         </div>
 
@@ -442,7 +443,7 @@
                     <div class="favoris-row__img-culumn">
                         <img src="assets/img/2.content/favoris_element_10.png" alt="" class="favoris-row__img-culumn-img">
                         <div class="favoris-row__img-culumn-subtitle">
-                            <img src="assets/img/2.content/favoris_element_icon.svg" alt="" class="favoris-row__img-culumn-subtitle-img">
+                            <div class="favoris-row__img-culumn-subtitle-img"></div>
                             <p class="favoris-row__img-culumn-subtitle-text">Ajouter aux Favoris</p>
                         </div>
 
@@ -482,7 +483,7 @@
                     <div class="favoris-row__img-culumn">
                         <img src="assets/img/2.content/favoris_element_11.png" alt="" class="favoris-row__img-culumn-img">
                         <div class="favoris-row__img-culumn-subtitle">
-                            <img src="assets/img/2.content/favoris_element_icon.svg" alt="" class="favoris-row__img-culumn-subtitle-img">
+                            <div class="favoris-row__img-culumn-subtitle-img"></div>
                             <p class="favoris-row__img-culumn-subtitle-text">Ajouter aux Favoris</p>
                         </div>
 
@@ -522,7 +523,7 @@
                     <div class="favoris-row__img-culumn">
                         <img src="assets/img/2.content/favoris_element_12.png" alt="" class="favoris-row__img-culumn-img">
                         <div class="favoris-row__img-culumn-subtitle">
-                            <img src="assets/img/2.content/favoris_element_icon.svg" alt="" class="favoris-row__img-culumn-subtitle-img">
+                            <div class="favoris-row__img-culumn-subtitle-img"></div>
                             <p class="favoris-row__img-culumn-subtitle-text">Ajouter aux Favoris</p>
                         </div>
 
@@ -608,7 +609,6 @@
             </div>
         </div>
     </div>
-
     @@include('_footer.html')
 </div>
 <div class="popup-wrapper">
@@ -643,6 +643,56 @@
             <button class="popup__button popup__button_agree" data-popup-close>Enregistrer mes préférences</button>
             <button class="popup__button popup__button_more">En savoir plus</button>
         </div>
+    </div>
+</div>
+<div class="popup-wrapper">
+    <div class="popup popup_settings">
+        <div class="popup__close popup__close_mobile-arrow" data-popup-close></div>
+        <p class="popup__settings-title">Trier par</p>
+        <div class="popup__settings-list">
+            <div class="popup__settings-list-item popup__settings-list-item_with-rows">
+                Sur Les Appels Reçus
+            </div>
+            <div class="popup__settings-list-item popup__settings-list-item_with-rows">
+                Par Classement
+            </div>
+        </div>
+        <p class="popup__settings-title">Toutes Les Compétences</p>
+        <div class="popup__settings-list">
+            <div class="popup__settings-list-item">
+                <div class="wrapper-voyance-search__row-checkbox-element">
+                    <input name="checkbox-medium" type="checkbox" class="voyance-search__checkbox">
+                    <label for="" class="voyance-search__label">
+                        <p class="voyance-search__checkbox-text">Astrologue</p>
+                    </label>
+                </div>
+            </div>
+            <div class="popup__settings-list-item">
+                <div class="wrapper-voyance-search__row-checkbox-element">
+                    <input name="checkbox-medium" type="checkbox" class="voyance-search__checkbox">
+                    <label for="" class="voyance-search__label">
+                        <p class="voyance-search__checkbox-text">Tarologue</p>
+                    </label>
+                </div>
+            </div>
+            <div class="popup__settings-list-item">
+                <div class="wrapper-voyance-search__row-checkbox-element">
+                    <input name="checkbox-medium" type="checkbox" class="voyance-search__checkbox">
+                    <label for="" class="voyance-search__label">
+                        <p class="voyance-search__checkbox-text">Médium</p>
+                    </label>
+                </div>
+            </div>
+            <div class="popup__settings-list-item">
+                <div class="wrapper-voyance-search__row-checkbox-element">
+                    <input name="checkbox-medium" type="checkbox" class="voyance-search__checkbox">
+                    <label for="" class="voyance-search__label">
+                        <p class="voyance-search__checkbox-text">Numérologue</p>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <button class="popup__button popup__button_thanks" data-popup-close>Appliquer</button>
     </div>
 </div>
 
