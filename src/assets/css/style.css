@@ -88,7 +88,7 @@ header {
 }
 @media (max-width: 767px) {
   header {
-    padding: 20px calc((100% - 375px) / 2) 0;
+    padding: 20px calc((100% - 355px) / 2) 0;
   }
 }
 @media (max-width: 374px) {
@@ -204,11 +204,10 @@ header {
   transition: 0.2s all ease-in-out;
 }
 .main-menu__item:hover {
-  background: #94A779;
+  color: #4F751A;
 }
 .main-menu__item:active {
-  background: #34520B;
-  color: #FFFFFF;
+  color: #34520B;
 }
 @media (max-width: 1025px) {
   .main-menu__item {
@@ -221,8 +220,7 @@ header {
 }
 
 .main-menu__item_active {
-  background: #769250;
-  color: #FFFFFF;
+  color: #4F751A;
 }
 
 .content {
@@ -1817,8 +1815,10 @@ header {
   transition: 0.2s all ease-in-out;
 }
 .block__button:hover {
-  color: #769250;
-  background: #FFFFFF;
+  background: #4F751A;
+}
+.block__button:active {
+  background: #34520B;
 }
 
 .block__button_specialist-block {
@@ -3182,13 +3182,15 @@ footer {
   transition: 0.2s all ease-in-out;
 }
 
-.popup__button_agree, .popup__button_thanks {
+.popup__button_agree {
   background: #769250;
   color: #FFFFFF;
 }
-.popup__button_agree:hover, .popup__button_thanks:hover {
-  color: #769250;
-  background: #FFFFFF;
+.popup__button_agree:hover {
+  background: #4F751A;
+}
+.popup__button_agree:active {
+  background: #34520B;
 }
 
 .popup__button_more:hover {
@@ -3198,6 +3200,12 @@ footer {
 
 .popup__button_thanks {
   margin-top: 30px;
+  background: #769250;
+  color: #FFFFFF;
+}
+.popup__button_thanks:hover {
+  color: #769250;
+  background: #FFFFFF;
 }
 
 .popup__close {

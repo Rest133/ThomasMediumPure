@@ -255,13 +255,15 @@
   transition: 0.2s all ease-in-out;
 }
 
-.popup__button_agree, .popup__button_thanks {
+.popup__button_agree {
   background: #769250;
   color: #FFFFFF;
 
   &:hover {
-    color: #769250;
-    background: #FFFFFF;
+    background: #4F751A;
+  }
+  &:active{
+    background: #34520B;
   }
 }
 
@@ -274,6 +276,13 @@
 
 .popup__button_thanks {
   margin-top: 30px;
+  background: #769250;
+  color: #FFFFFF;
+
+  &:hover {
+    color: #769250;
+    background: #FFFFFF;
+  }
 }
 
 .popup__close {

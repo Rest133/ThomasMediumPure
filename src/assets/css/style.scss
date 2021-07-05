@@ -1565,8 +1565,10 @@
   transition: 0.2s all ease-in-out;
 
   &:hover {
-    color: #769250;
-    background: #FFFFFF;
+    background: #4F751A;
+  }
+  &:active{
+    background: #34520B;
   }
 }
 

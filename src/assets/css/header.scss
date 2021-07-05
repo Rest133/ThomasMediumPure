@@ -48,7 +48,7 @@ header {
     z-index: 100;
   }
   @media (max-width: 767px) {
-    padding: 20px calc((100% - 375px) / 2) 0;
+    padding: 20px calc((100% - 355px) / 2) 0;
   }
   @media (max-width: 374px) {
     padding: 20px 20px 0;
@@ -163,12 +163,11 @@ header {
 
 
   &:hover {
-    background: #94A779;
+    color: #4F751A;
   }
 
   &:active {
-    background: #34520B;
-    color: #FFFFFF;
+    color: #34520B;
   }
   @media (max-width: 1025px) {
     width: max-content;
@@ -180,6 +179,5 @@ header {
 }
 
 .main-menu__item_active {
-  background: #769250;
-  color: #FFFFFF;
+  color: #4F751A;
 }

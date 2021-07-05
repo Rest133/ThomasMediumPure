@@ -10,6 +10,8 @@ document.addEventListener('DOMContentLoaded', () => {
     addMobileMenuHandler()
 
     addFavorite()
+
+    openFAQItem()
 })
 
 
@@ -114,4 +116,21 @@ function addFavorite() {
             })
         })
     }
+}
+
+function openFAQItem() {
+    if (document.querySelector('.faq-block') !== null) {
+        let faqBlock = document.querySelector('.faq-block')
+        faqBlock.querySelectorAll('.faq-questions__row').forEach(faqItem => {
+            faqItem.addEventListener('click', () => {
+                console.log(faqItem.open)
+                if (!faqItem.open) {
+                    faqItem.querySelector('.faq-element').textContent = '–'
+                } else {
+                    faqItem.querySelector('.faq-element').textContent = '+'
+                }
+            })
+        })
+    }
+
 }
