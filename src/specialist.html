@@ -17,7 +17,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Mada:wght@200;300;400;500;600;700;900&family=Prata&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Mada:wght@200;300;400;500;600;700;900&family=Prata&family=Bebas+Neue&display=swap"
           rel="stylesheet">
 </head>
 <body>
@@ -155,10 +155,18 @@
                     <p class="mini-progress-block__text">Indisponible</p>
                 </div>
             </div>
+            <div class="table-block__left-column table-block__left-column_mt100">
+                <div class="table-block__left-list">
+                    <p class="progress-row__numbers">24/02</p>
+                    <p class="progress-row__numbers">24/02</p>
+                    <p class="progress-row__numbers">24/02</p>
+                    <p class="progress-row__numbers">24/02</p>
+                    <p class="progress-row__numbers">24/02</p>
+                    <p class="progress-row__numbers">24/02</p>
+                </div>
+            </div>
             <div class="table-block__scroll-wrapper">
                 <div class="table-block__schedule schedule-block">
-                    <div class="schedule-block__date">
-                    </div>
                     <div class="schedule-block__hours-row">
                         <p class="schedule-block__text_hours">00h</p>
                         <p class="schedule-block__text_hours">01h</p>
@@ -214,7 +222,6 @@
                 <div class="table-block__progress">
                     <div class="table-block__progress-row progress-row">
                         <div class="progress-row__main progress-row__main_full">
-                            <p class="progress-row__numbers">24/02</p>
                             <div class="progress-row__list">
                                 <div class="progress-row__mini-progress-block mini-progress-block">
                                     <progress class="mini-progress-block__progress-line mini-progress-block__progress-line_green" max="100" value="100"></progress>
@@ -293,7 +300,6 @@
                     </div>
                     <div class="table-block__progress-row progress-row">
                         <div class="progress-row__main progress-row__main_full">
-                            <p class="progress-row__numbers">24/02</p>
                             <div class="progress-row__list">
                                 <div class="progress-row__mini-progress-block mini-progress-block">
                                     <progress class="mini-progress-block__progress-line mini-progress-block__progress-line_green" max="100" value="100"></progress>
@@ -372,7 +378,6 @@
                     </div>
                     <div class="table-block__progress-row progress-row">
                         <div class="progress-row__main progress-row__main_full">
-                            <p class="progress-row__numbers">24/02</p>
                             <div class="progress-row__list">
                                 <div class="progress-row__mini-progress-block mini-progress-block">
                                     <progress class="mini-progress-block__progress-line mini-progress-block__progress-line_green" max="100" value="100"></progress>
@@ -451,7 +456,6 @@
                     </div>
                     <div class="table-block__progress-row progress-row">
                         <div class="progress-row__main progress-row__main_full">
-                            <p class="progress-row__numbers">24/02</p>
                             <div class="progress-row__list">
                                 <div class="progress-row__mini-progress-block mini-progress-block">
                                     <progress class="mini-progress-block__progress-line mini-progress-block__progress-line_green" max="100" value="100"></progress>
@@ -530,7 +534,6 @@
                     </div>
                     <div class="table-block__progress-row progress-row">
                         <div class="progress-row__main progress-row__main_full">
-                            <p class="progress-row__numbers">24/02</p>
                             <div class="progress-row__list">
                                 <div class="progress-row__mini-progress-block mini-progress-block">
                                     <progress class="mini-progress-block__progress-line mini-progress-block__progress-line_green" max="100" value="100"></progress>
@@ -609,7 +612,6 @@
                     </div>
                     <div class="table-block__progress-row progress-row">
                         <div class="progress-row__main progress-row__main_full">
-                            <p class="progress-row__numbers">24/02</p>
                             <div class="progress-row__list">
                                 <div class="progress-row__mini-progress-block mini-progress-block">
                                     <progress class="mini-progress-block__progress-line mini-progress-block__progress-line_green" max="100" value="100"></progress>
@@ -873,12 +875,12 @@
             <span class="rating__star rating__star_active"></span>
             <span class="rating__star"></span>
         </div>
-        <div class="block form-block form-block_popup">
-            <input type="text" class="form-block__input" placeholder="Votre nom">
-            <input type="text" class="form-block__input" placeholder="Votre numéro de téléphone">
+        <form class="block form-block form-block_popup">
+            <input type="text" class="form-block__input" placeholder="Votre nom" required>
+            <input type="text" class="form-block__input" placeholder="Votre numéro de téléphone" required>
             <textarea type="text" class="form-block__input form-block__input_textarea" placeholder="Commentaires"></textarea>
             <button type="submit" class="block__button block__button_from-block" data-popup-close data-popup-name="popup_form-thanks">Envoyer</button>
-        </div>
+        </form>
     </div>
 </div>
 <div class="popup-wrapper">

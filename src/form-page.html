@@ -17,7 +17,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Mada:wght@200;300;400;500;600;700;900&family=Prata&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Mada:wght@200;300;400;500;600;700;900&family=Prata&family=Bebas+Neue&display=swap"
           rel="stylesheet">
 </head>
 <body>
@@ -33,15 +33,15 @@
     </div>
 
     <div class="content">
-        <div class="block form-block">
+        <form class="block form-block">
             <span class="block__img-shape block__img-shape_form-block"></span>
-            <input type="text" class="form-block__input" placeholder="Votre nom">
+            <input type="text" class="form-block__input" placeholder="Votre nom" required>
             <input type="text" class="form-block__input" placeholder="Votre prénom">
             <input type="text" class="form-block__input" placeholder="Votre courriel">
-            <input type="text" class="form-block__input" placeholder="Votre numéro de téléphone">
+            <input type="text" class="form-block__input" placeholder="Votre numéro de téléphone" required>
             <textarea type="text" class="form-block__input form-block__input_textarea" placeholder="Commentaires"></textarea>
             <button type="submit" class="block__button block__button_from-block" data-popup-name="popup_form-thanks">Envoyer ma demande</button>
-        </div>
+        </form>
         <div class="faq-block faq-block_standalone">
             <div class="faq-title tl_title">FAQ</div>
             <div class="faq-questions">

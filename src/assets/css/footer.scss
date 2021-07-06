@@ -91,12 +91,16 @@ footer {
 .footer__number-block {
   display: flex;
   width: 280px;
-  margin: 43px auto 0;
+  margin: 43px 0 0 auto;
   padding-top: 3px;
   padding-left: 10px;
   background: #FFFFFF;
   border: 1px solid #B3B5B2;
   position: relative;
+  @media (max-width: 1025px) {
+    margin-bottom: 80px;
+    margin-right: auto;
+  }
 }
 
 .footer__number-block-text {
@@ -161,8 +165,11 @@ footer {
   background: #FFEBCD;
   border-radius: 80px;
   @media (max-width: 1025px) {
+    position: fixed;
+    bottom: 2%;
     display: flex;
     margin-top: 60px;
+    z-index: 100;
   }
   @media (max-width: 767px) {
     margin-top: 20px;

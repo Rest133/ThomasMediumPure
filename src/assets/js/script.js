@@ -12,6 +12,10 @@ document.addEventListener('DOMContentLoaded', () => {
     addFavorite()
 
     openFAQItem()
+
+    addPopupSort()
+
+    changeSearchInputPlaceholder()
 })
 
 
@@ -19,18 +23,14 @@ function findOpenPopupsElements() {
     document.querySelectorAll('[data-popup-name]').forEach(currentOpenPopupElement => {
         let popupName = currentOpenPopupElement.getAttribute('data-popup-name'),
             popup = document.querySelector(`.${popupName}`)
-        currentOpenPopupElement.addEventListener('click', event => {
-            event.preventDefault()
-            if (popup.parentElement.classList.contains('popup-wrapper')) {
-                $(popup.parentElement).fadeIn()
-                document.body.style.overflow = 'hidden'
-                $(popup).fadeIn()
-                $(popup).css('display', 'flex')
-                popup.classList.add('popup-active')
+
+        currentOpenPopupElement.addEventListener('click', () => {
+            if (currentOpenPopupElement.parentElement.tagName === 'FORM') {
+                if (validateForm(currentOpenPopupElement.parentElement)) {
+                    openPopup(popup)
+                }
             } else {
-                $(popup).fadeIn()
-                $(popup).css('display', 'flex')
-                popup.classList.add('popup-active')
+                openPopup(popup)
             }
         })
     })
@@ -44,12 +44,12 @@ function addCloseEventToPopups() {
         popupCloseAll.forEach(popupClose => {
             popupClose.addEventListener('click', event => {
                 event.preventDefault()
-                $(popup).fadeOut()
-                popup.classList.remove('popup-active')
-
-                if (popup.parentElement.classList.contains('popup-wrapper')) {
-                    $(popup.parentElement).fadeOut()
-                    document.body.style.overflow = ''
+                if (popupClose.parentElement.tagName === 'FORM') {
+                    if (validateForm(popupClose.parentElement)) {
+                        closePopup(popup)
+                    }
+                } else {
+                    closePopup(popup)
                 }
             })
         })
@@ -69,13 +69,14 @@ function addCloseEventToPopups() {
 
 function addCookiesPopup() {
     setTimeout(function () {
-        let cookiesPopup = document.querySelector('.popup_cookies'),
-            popupWrapper = document.querySelector('.popup-wrapper')
-        $(popupWrapper).fadeIn()
-        $(cookiesPopup).fadeIn()
-        $(cookiesPopup).css('display', 'flex')
-        document.body.style.overflow = 'hidden'
-
+        if (document.querySelector('.popup_cookies') !== null) {
+            let cookiesPopup = document.querySelector('.popup_cookies'),
+                popupWrapper = document.querySelector('.popup-wrapper')
+            $(popupWrapper).fadeIn()
+            $(cookiesPopup).fadeIn()
+            $(cookiesPopup).css('display', 'flex')
+            document.body.style.overflow = 'hidden'
+        }
     }, 2000)
 }
 
@@ -133,4 +134,68 @@ function openFAQItem() {
         })
     }
 
+}
+
+function addPopupSort() {
+    if (document.querySelector('.popup_settings') !== null) {
+        let settingsPopup = document.querySelector('.popup_settings')
+        settingsPopup.querySelectorAll('.popup__settings-list-item_sort').forEach(filterBtn => {
+            filterBtn.addEventListener('click', () => {
+                filterBtn.classList.toggle('active')
+            })
+        })
+    }
+}
+
+function openPopup(popup) {
+    if (popup.parentElement.classList.contains('popup-wrapper')) {
+        $(popup.parentElement).fadeIn()
+        document.body.style.overflow = 'hidden'
+        $(popup).fadeIn()
+        $(popup).css('display', 'flex')
+        popup.classList.add('popup-active')
+    } else {
+        $(popup).fadeIn()
+        $(popup).css('display', 'flex')
+        popup.classList.add('popup-active')
+    }
+}
+
+function closePopup(popup) {
+    $(popup).fadeOut()
+    popup.classList.remove('popup-active')
+
+    if (popup.parentElement.classList.contains('popup-wrapper')) {
+        $(popup.parentElement).fadeOut()
+        document.body.style.overflow = ''
+    }
+}
+
+function validateForm(form) {
+    let formCorrect = false,
+        errors = 0
+
+    form.querySelectorAll('.form-block__input').forEach(formInput => {
+        if (!formInput.checkValidity()) {
+            errors++
+            formInput.classList.add('form-block__input_wrong')
+        } else {
+            formInput.classList.remove('form-block__input_wrong')
+            formInput.classList.add('form-block__input_correct')
+            setTimeout(function () {
+                formInput.classList.remove('form-block__input_correct')
+            }, 1500)
+        }
+    })
+
+    return errors === 0
+}
+
+function changeSearchInputPlaceholder() {
+    if (document.querySelector('.search-input_change') !== null) {
+        let searchInput = document.querySelector('.search-input_change')
+        if (window.matchMedia('(max-width: 1025px)').matches) {
+            searchInput.placeholder = searchInput.getAttribute('data-mob-placeholder')
+        }
+    }
 }

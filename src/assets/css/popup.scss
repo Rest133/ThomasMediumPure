@@ -262,7 +262,8 @@
   &:hover {
     background: #4F751A;
   }
-  &:active{
+
+  &:active {
     background: #34520B;
   }
 }
@@ -361,19 +362,35 @@
 
   background: #FFF7EC;
   border-radius: 10px;
-  .voyance-search__checkbox-text{
+
+  .voyance-search__checkbox-text {
     color: #000000;
     font-weight: 400;
   }
 }
 
-.popup__settings-list-item_with-rows{
-  &::after{
+.popup__settings-list-item_with-checkbox {
+  padding: 0;
+
+  .wrapper-voyance-search__row-checkbox-element {
+    padding: 13px 20px;
+    width: 100%;
+  }
+}
+
+.popup__settings-list-item_sort {
+  &::after {
     content: '';
     width: 17px;
     height: 10px;
     background: url(../img/2.content/settings.svg) center no-repeat;
     background-size: contain;
     margin-left: auto;
+  }
+
+  &.active {
+    &::after {
+      transform: scale(1, -1);
+    }
   }
 }

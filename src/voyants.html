@@ -16,7 +16,8 @@
     <link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Mada:wght@200;300;400;500;600;700;900&family=Prata&family=Mitr:wght@200;300;400;500;600;700&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mada:wght@200;300;400;500;600;700;900&family=Prata&family=Bebas+Neue&display=swap"
           rel="stylesheet">
 </head>
 <body>
@@ -28,7 +29,7 @@
         <div class="block block_first-page-block voyants-block">
             <div class="voyants-title tl_title">Voyants planifiés</div>
             <div class="voyants-block__search search">
-                <input type="text" class="search-input"
+                <input type="text" class="search-input search-input_change" data-mob-placeholder="Recherche"
                        placeholder="Recherchez un voyant par ses compétences et trouvez son numéro d'appel (remplissez un ou plusieurs champs)">
                 <button class="search-submit-button"></button>
             </div>
@@ -52,12 +53,22 @@
                     <p class="mini-progress-block__text">Indisponible</p>
                 </div>
             </div>
+            <div class="table-block__left-column">
+                <div class="schedule-block__date">
+                    <p class="schedule-block__text schedule-block__text_current-date">23 août 2020</p>
+                    <p class="schedule-block__text schedule-block__text_change-date">Une autre date</p>
+                </div>
+                <div class="table-block__left-list">
+                    <p class="progress-row__name">Evariste</p>
+                    <p class="progress-row__name">Karla</p>
+                    <p class="progress-row__name">Tibo</p>
+                    <p class="progress-row__name">Didier</p>
+                    <p class="progress-row__name">Frederic</p>
+                    <p class="progress-row__name">Karla</p>
+                </div>
+            </div>
             <div class="table-block__scroll-wrapper">
                 <div class="table-block__schedule schedule-block">
-                    <div class="schedule-block__date">
-                        <p class="schedule-block__text schedule-block__text_current-date">23 août 2020</p>
-                        <p class="schedule-block__text schedule-block__text_change-date">Une autre date</p>
-                    </div>
                     <div class="schedule-block__hours-row">
                         <p class="schedule-block__text_hours">00h</p>
                         <p class="schedule-block__text_hours">01h</p>
@@ -112,7 +123,6 @@
                 </div>
                 <div class="table-block__progress">
                     <div class="table-block__progress-row progress-row">
-                        <p class="progress-row__name">Evariste</p>
                         <div class="progress-row__main">
                             <div class="progress-row__photo-wrapper">
                                 <img src="assets/img/2.content/progress-row__specialist1.png" alt="" class="progress-row__photo">
@@ -194,7 +204,6 @@
                         </div>
                     </div>
                     <div class="table-block__progress-row progress-row">
-                        <p class="progress-row__name">Karla</p>
                         <div class="progress-row__main">
                             <div class="progress-row__photo-wrapper">
                                 <img src="assets/img/2.content/progress-row__specialist2.png" alt="" class="progress-row__photo">
@@ -276,7 +285,6 @@
                         </div>
                     </div>
                     <div class="table-block__progress-row progress-row">
-                        <p class="progress-row__name">Tibo</p>
                         <div class="progress-row__main">
                             <div class="progress-row__photo-wrapper">
                                 <img src="assets/img/2.content/progress-row__specialist3.png" alt="" class="progress-row__photo">
@@ -358,7 +366,6 @@
                         </div>
                     </div>
                     <div class="table-block__progress-row progress-row">
-                        <p class="progress-row__name">Didier</p>
                         <div class="progress-row__main">
                             <div class="progress-row__photo-wrapper">
                                 <img src="assets/img/2.content/progress-row__specialist4.png" alt="" class="progress-row__photo">
@@ -440,7 +447,6 @@
                         </div>
                     </div>
                     <div class="table-block__progress-row progress-row">
-                        <p class="progress-row__name">Frederic</p>
                         <div class="progress-row__main">
                             <div class="progress-row__photo-wrapper">
                                 <img src="assets/img/2.content/progress-row__specialist5.png" alt="" class="progress-row__photo">
@@ -522,7 +528,6 @@
                         </div>
                     </div>
                     <div class="table-block__progress-row progress-row">
-                        <p class="progress-row__name">Karla</p>
                         <div class="progress-row__main">
                             <div class="progress-row__photo-wrapper">
                                 <img src="assets/img/2.content/progress-row__specialist6.png" alt="" class="progress-row__photo">
@@ -661,5 +666,7 @@
 
     @@include('_footer.html')
 </div>
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/script.js"></script>
 </body>
 </html>
