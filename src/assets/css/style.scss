@@ -45,8 +45,8 @@
 }
 
 .table-title {
-  margin: 60px auto 20px;
-
+  margin: 90px auto 20px;
+  width: 100%;
   @media (max-width: 1025px) {
     font-size: 32px;
   }
@@ -58,10 +58,12 @@
   padding: 0 calc((100% - 810px) / 2);
   margin: 0 auto;
   justify-content: space-between;
-  @media (max-width: 767px) {
-    padding: 0;
-    max-width: 300px;
-    width: 100%;
+
+  @media (max-width: 1025px) {
+    padding: 0 calc((100% - 300px) / 2);
+  }
+  @media (max-width: 374px) {
+    padding: 0 calc((100% - 250px) / 2);
   }
 }
 
@@ -260,6 +262,17 @@
   }
 }
 
+.tl_title_error{
+  @media (max-width: 1025px) {
+    font-size: 32px;
+    margin-top: 50px;
+  }
+  @media (max-width: 767px) {
+    margin-top: 10px;
+    font-size: 30px;
+  }
+}
+
 .tl_title_form-page {
   color: #FFFFFF;
   text-align: left;
@@ -304,6 +317,15 @@
   min-width: 425px;
   @media (max-width: 1321px) {
     margin: 20px 25px;
+  }
+  @media (max-width: 1025px) {
+      max-width: 354px;
+      width: 100%;
+      min-width: unset;
+      margin: 20px 20px 0 0;
+  }
+  @media (max-width: 767px) {
+      margin: 10px 0 0 0;
   }
 }
 
@@ -361,6 +383,9 @@
   margin-left: 17px;
   margin-top: 10px;
   width: 50%;
+  @media (max-width: 767px) {
+    margin-left: 10px;
+  }
 }
 
 .favoris-row__text-column-title {
@@ -392,6 +417,9 @@
 .favoris-row__text-column-row {
   display: flex;
   flex-flow: wrap;
+  @media (max-width: 767px) {
+    justify-content: space-between;
+  }
 }
 
 .favoris-row__text-column-row_specialist-block {
@@ -414,7 +442,6 @@
   font-size: 14px;
   font-weight: 600;
   margin-top: 4px;
-
 }
 
 .favoris-row__text-column-phone {
@@ -522,12 +549,6 @@
   .favoris-row {
     justify-content: center;
   }
-  .favoris-row__element {
-    max-width: 354px;
-    width: 100%;
-    min-width: unset;
-    margin: 20px 20px 0 0;
-  }
 
   .favoris-row__element:nth-child(2n) {
     margin-right: 0;
@@ -571,10 +592,6 @@
 @media(max-width: 767px) {
   .favoris-row {
     flex-flow: column;
-  }
-  .favoris-row__element {
-    margin: 10px 0 0 0;
-
   }
   .favoris-row__img-culumn {
     max-width: 147px;
@@ -878,6 +895,12 @@
   }
   @media (max-width: 374px) {
     font-size: 12px;
+  }
+}
+
+.voyance-search__header-element_small{
+  @media (max-width: 1025px) {
+    width: 70px;
   }
 }
 
@@ -1633,6 +1656,10 @@
   }
 }
 
+.block__button_error{
+  margin-top: 50px;
+}
+
 .block__button_specialist-block {
   height: 60px;
   margin-right: 20px;
@@ -1719,8 +1746,18 @@
   align-self: center;
 }
 
-.language-img-wrapper_up {
+.language-img-wrapper_mobile {
   align-self: flex-start;
+  width: 70px;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  .language-img{
+    width: 21px;
+    height: 17px;
+  }
 }
 
 .language-img__text {
@@ -1764,11 +1801,21 @@
   flex-flow: column;
   text-align: center;
   width: 70px;
-  margin-left: auto;
 
   .favorite-button__img {
     margin-right: 0;
     margin-bottom: 5px;
+  }
+  @media (max-width: 767px) {
+    font-size: 12px;
+    font-weight: 600;
+
+    .favorite-button__img{
+      min-width: unset;
+      min-height: unset;
+      width: 18px;
+      height: 17px;
+    }
   }
 }
 
@@ -2056,16 +2103,23 @@
 }
 
 .specialist-block__contact-code_mobile {
-  margin-left: 75px;
+  width: 70px;
+  justify-self: center;
   font-family: Bebas Neue, sans-serif;
   font-size: 25px;
-
   span {
     font-family: Mada;
     font-weight: 600;
     font-size: 16px;
 
     color: #A0742F;
+  }
+  @media (max-width: 767px) {
+    line-height: 1;
+    span{
+      line-height: 1;
+      font-size: 12px;
+    }
   }
 }
 
@@ -2183,6 +2237,12 @@
 
 .block__text_welcome_full {
   width: 100%;
+}
+
+.block__text_error-page{
+  @media (max-width: 374px) {
+    padding: 0 20px;
+  }
 }
 
 .welcome-block__block-with-img {
@@ -2474,6 +2534,13 @@
   border-color: #769250;
   background-image: url(../img/2.content/correct.svg);
   background-position-x: 95%;
+}
+
+.error-block{
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 55vh;
 }
 
 @import "footer";

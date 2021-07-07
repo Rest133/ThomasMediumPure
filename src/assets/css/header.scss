@@ -43,7 +43,7 @@ header {
     width: 100vw;
     height: 80px;
     margin: 0;
-    padding: 0 calc((100% - 768px) / 2);
+    padding: 0 calc((100% - 728px) / 2);
     background: #FFFFFF;
     z-index: 100;
   }
@@ -51,7 +51,7 @@ header {
     padding: 20px calc((100% - 355px) / 2) 0;
   }
   @media (max-width: 374px) {
-    padding: 20px 20px 0;
+    padding: 20px 30px 0;
   }
 }
 
@@ -178,5 +178,9 @@ header {
 }
 
 .main-menu__item_active {
-  color: #4F751A;
+  color: #FFFFFF;
+  background: #769250;
+  &:hover{
+    color: #FFFFFF;
+  }
 }

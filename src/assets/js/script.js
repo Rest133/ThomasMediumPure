@@ -16,6 +16,8 @@ document.addEventListener('DOMContentLoaded', () => {
     addPopupSort()
 
     changeSearchInputPlaceholder()
+
+    starRatingHandler()
 })
 
 
@@ -60,8 +62,7 @@ function addCloseEventToPopups() {
             let openPopup = document.querySelector('.popup.popup-active')
 
             if (!event.target.closest('.popup-active') && !event.target.closest('[data-popup-name]')) {
-                $(openPopup).fadeOut()
-                openPopup.classList.remove('popup-active')
+                closePopup(openPopup)
             }
         }
     })
@@ -124,8 +125,8 @@ function openFAQItem() {
         let faqBlock = document.querySelector('.faq-block')
         faqBlock.querySelectorAll('.faq-questions__row').forEach(faqItem => {
             faqItem.addEventListener('click', () => {
-                console.log(faqItem.open)
-                if (!faqItem.open) {
+                faqItem.querySelector('.faq_question__text').classList.toggle('dn')
+                if (!faqItem.querySelector('.faq_question__text').classList.contains('dn')) {
                     faqItem.querySelector('.faq-element').textContent = '–'
                 } else {
                     faqItem.querySelector('.faq-element').textContent = '+'
@@ -198,4 +199,39 @@ function changeSearchInputPlaceholder() {
             searchInput.placeholder = searchInput.getAttribute('data-mob-placeholder')
         }
     }
+}
+
+function starRatingHandler() {
+    let starValue = 0
+    if (document.querySelector('.popup__rating') !== null) {
+        let ratingBlock = document.querySelector('.popup__rating'),
+            allStars = ratingBlock.querySelectorAll('.rating__star')
+        allStars.forEach((star, i) => {
+            star.addEventListener('mouseenter', () => {
+                fillAllStarsToCurrent(allStars, i)
+            })
+            star.addEventListener('click', () => {
+                starValue = i + 1
+                fillAllStarsToCurrent(allStars, i)
+                console.log(starValue)
+            })
+        })
+        ratingBlock.addEventListener('mouseleave', () => {
+            if (starValue === 0) {
+                allStars.forEach(star => {
+                    star.classList.remove('rating__star_active')
+                })
+            }
+        })
+    }
+}
+
+function fillAllStarsToCurrent(stars, index) {
+    stars.forEach((currentStar, i) => {
+        if (i <= index) {
+            currentStar.classList.add('rating__star_active')
+        } else {
+            currentStar.classList.remove('rating__star_active')
+        }
+    })
 }
