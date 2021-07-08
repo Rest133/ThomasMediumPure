@@ -24,10 +24,13 @@ img {
   flex-flow: column;
   width: 100%;
   margin: 0 auto;
-  overflow: hidden;
   @media (max-width: 1025px) {
     overflow: hidden;
   }
+}
+
+.wrapper_overflow-hidden{
+  overflow-x: hidden;
 }
 
 header {
@@ -48,7 +51,7 @@ header {
     z-index: 100;
   }
   @media (max-width: 767px) {
-    padding: 20px calc((100% - 355px) / 2) 0;
+    padding: 20px calc((100% - 325px) / 2) 0;
   }
   @media (max-width: 374px) {
     padding: 20px 30px 0;
@@ -172,7 +175,7 @@ header {
     width: max-content;
     min-height: 50px;
     &:first-of-type{
-      margin-top: 200px;
+      margin-top: 25vh;
     }
   }
 }

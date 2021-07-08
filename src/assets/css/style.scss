@@ -93,13 +93,12 @@
   flex-flow: column;
   width: 90%;
 
-  &::-webkit-scrollbar {
-    display: none;
-  }
-
   @media (max-width: 1025px) {
     overflow-x: scroll;
     width: 87%;
+    &::-webkit-scrollbar {
+      display: none;
+    }
   }
   @media (max-width: 767px) {
     width: 72%;
@@ -891,16 +890,24 @@
   }
 
   @media (max-width: 767px) {
+    width: 90px;
     font-size: 14px;
   }
   @media (max-width: 374px) {
     font-size: 12px;
+    width: 70px;
   }
 }
 
 .voyance-search__header-element_small{
   @media (max-width: 1025px) {
     width: 70px;
+  }
+  @media (max-width: 767px) {
+    width: 70px;
+  }
+  @media (max-width: 374px) {
+    width: 45px;
   }
 }
 
@@ -1327,6 +1334,11 @@
 .schedule-block {
   display: flex;
   width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  background: #FFFFFF;
+
   @media (max-width: 1025px) {
     margin-left: 40px;
   }
@@ -1336,6 +1348,10 @@
   display: flex;
   flex-flow: column;
   width: 100%;
+  position: sticky;
+  top: 0;
+  background: #FFFFFF;
+  z-index: 10;
 }
 
 .schedule-block__text {
@@ -1394,6 +1410,7 @@
   flex-flow: wrap;
   justify-content: flex-end;
   padding-right: 5px;
+  position: relative;
 
   font-family: Mada;
   font-style: normal;
@@ -1402,6 +1419,15 @@
   line-height: 150%;
 
   color: #B2C19C;
+  &::before{
+    content: '';
+    width: 40px;
+    height: 100%;
+    position: absolute;
+    left: -39px;
+    top: 0;
+    background: #FFFFFF;
+  }
 }
 
 .progress-row {

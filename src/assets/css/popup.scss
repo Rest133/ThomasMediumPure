@@ -39,6 +39,12 @@
     max-width: 335px;
     left: calc((100% - 335px) / 2);
   }
+  @media (max-width: 374px) {
+    max-width: 100%;
+    top: 0;
+    bottom: unset;
+    left: 0;
+  }
 }
 
 .popup_form-thanks {
@@ -90,6 +96,12 @@
   @media (max-width: 767px) {
     border-radius: 50px 50px 0 0;
   }
+  @media (max-width: 374px) {
+    height: 95vh;
+    &.popup-active{
+      top: 10%;
+    }
+  }
 }
 
 .popup_reaction {
@@ -117,6 +129,12 @@
   }
   @media (max-width: 767px) {
     border-radius: 50px 50px 0 0;
+  }
+  @media (max-width: 374px) {
+    height: 95vh;
+    &.popup-active{
+      top: 10%;
+    }
   }
 }
 
@@ -352,6 +370,9 @@
   flex-flow: column;
   width: 100%;
   margin-bottom: 40px;
+  @media (max-width: 374px) {
+    margin-bottom: 0;
+  }
 }
 
 .popup__settings-list-item {
@@ -383,13 +404,15 @@
     content: '';
     width: 17px;
     height: 10px;
-    background: url(../img/2.content/settings.svg) center no-repeat;
-    background-size: contain;
+    background: #769250;
+    -webkit-mask: url(../img/2.content/settings.svg) center no-repeat;
+    -webkit-mask-size: contain;
     margin-left: auto;
   }
 
   &.active {
     &::after {
+      background: #000000;
       transform: scale(1, -1);
     }
   }
