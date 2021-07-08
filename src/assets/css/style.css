@@ -1670,6 +1670,11 @@ header {
   top: 0;
   background: #FFFFFF;
 }
+@media (max-width: 1025px) {
+  .schedule-block__hours-row::before {
+    content: none;
+  }
+}
 
 .progress-row {
   display: flex;

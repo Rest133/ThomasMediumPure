@@ -1428,6 +1428,12 @@
     top: 0;
     background: #FFFFFF;
   }
+  
+  @media (max-width: 1025px) {
+    &::before{
+      content: none;
+    }
+  }
 }
 
 .progress-row {
