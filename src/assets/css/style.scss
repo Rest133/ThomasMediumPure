@@ -1383,6 +1383,7 @@
   display: flex;
   flex-flow: column;
   width: 10%;
+  position: relative;
   @media (max-width: 1025px) {
     width: 15%;
   }
@@ -1406,6 +1407,13 @@
   cursor: pointer;
   color: #3A6BB4;
 
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.schedule-block__text_choose-date{
+  cursor: pointer;
   &:hover {
     opacity: 0.7;
   }

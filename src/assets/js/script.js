@@ -20,6 +20,8 @@ document.addEventListener('DOMContentLoaded', () => {
     starRatingHandler()
 
     tableTopFixedHandler()
+
+    addChooseDateHandler()
 })
 
 
@@ -244,15 +246,15 @@ function tableTopFixedHandler() {
             fixedBlock = table.querySelector('.schedule-block'),
             scrollSchedule = fixedBlock.querySelector('.table-block__scroll-wrapper'),
             scrollTable = table.querySelector('.table-block__progress')
-        
+
         window.addEventListener('scroll', event => {
             if (window.matchMedia('(max-width:1025px)').matches) {
-                if ((window.pageYOffset > scrollTable.getBoundingClientRect().top + pageYOffset - 115) && (window.pageYOffset < scrollTable.getBoundingClientRect().bottom + pageYOffset-90)) {
-                    table.querySelector('.table-block__summary').style.marginBottom='102px'
+                if ((window.pageYOffset > scrollTable.getBoundingClientRect().top + pageYOffset - 115) && (window.pageYOffset < scrollTable.getBoundingClientRect().bottom + pageYOffset - 90)) {
+                    table.querySelector('.table-block__summary').style.marginBottom = '102px'
                     fixedBlock.classList.add('schedule-block_fixed')
-                }else {
+                } else {
                     fixedBlock.classList.remove('schedule-block_fixed')
-                    table.querySelector('.table-block__summary').style.marginBottom=''
+                    table.querySelector('.table-block__summary').style.marginBottom = ''
                 }
             }
         })
@@ -263,5 +265,17 @@ function tableTopFixedHandler() {
         $(scrollTable).scroll(function () {
             $(scrollSchedule).scrollLeft($(scrollTable).scrollLeft());
         });
+    }
+}
+
+function addChooseDateHandler() {
+    if (document.querySelector('.schedule-block__date') !== null) {
+        let chooseDateBlock = document.querySelector('.schedule-block__date')
+
+        chooseDateBlock.querySelectorAll('.schedule-block__text_choose-date').forEach(date => {
+            date.addEventListener('click', () => {
+                chooseDateBlock.querySelector('.schedule-block__text_current-date').textContent = date.textContent
+            })
+        })
     }
 }

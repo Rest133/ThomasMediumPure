@@ -151,6 +151,25 @@
   border-radius: 10px;
 }
 
+.schedule-block__date-popup{
+  top: 120%;
+  border-radius: 5px;
+  padding: 15px;
+  background: #f1f7e8;
+  &::before{
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 10%;
+    width: 10px;
+    height: 10px;
+    border-top: 0;
+    border-bottom: 10px solid #f1f7e8;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+  }
+}
+
 .popup__select-item {
   width: 100%;
   padding: 13px 20px;
