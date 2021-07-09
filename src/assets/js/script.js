@@ -18,6 +18,8 @@ document.addEventListener('DOMContentLoaded', () => {
     changeSearchInputPlaceholder()
 
     starRatingHandler()
+
+    tableTopFixedHandler()
 })
 
 
@@ -234,4 +236,32 @@ function fillAllStarsToCurrent(stars, index) {
             currentStar.classList.remove('rating__star_active')
         }
     })
+}
+
+function tableTopFixedHandler() {
+    if (document.querySelector('.table-block') !== null) {
+        let table = document.querySelector('.table-block'),
+            fixedBlock = table.querySelector('.schedule-block'),
+            scrollSchedule = fixedBlock.querySelector('.table-block__scroll-wrapper'),
+            scrollTable = table.querySelector('.table-block__progress')
+        
+        window.addEventListener('scroll', event => {
+            if (window.matchMedia('(max-width:1025px)').matches) {
+                if ((window.pageYOffset > scrollTable.getBoundingClientRect().top + pageYOffset - 115) && (window.pageYOffset < scrollTable.getBoundingClientRect().bottom + pageYOffset-90)) {
+                    table.querySelector('.table-block__summary').style.marginBottom='102px'
+                    fixedBlock.classList.add('schedule-block_fixed')
+                }else {
+                    fixedBlock.classList.remove('schedule-block_fixed')
+                    table.querySelector('.table-block__summary').style.marginBottom=''
+                }
+            }
+        })
+
+        $(scrollSchedule).scroll(function () {
+            $(scrollTable).scrollLeft($(scrollSchedule).scrollLeft());
+        });
+        $(scrollTable).scroll(function () {
+            $(scrollSchedule).scrollLeft($(scrollTable).scrollLeft());
+        });
+    }
 }
