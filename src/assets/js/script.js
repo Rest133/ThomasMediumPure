@@ -22,6 +22,8 @@ document.addEventListener('DOMContentLoaded', () => {
     tableTopFixedHandler()
 
     addChooseDateHandler()
+
+    addPlayButtonHandler()
 })
 
 
@@ -269,12 +271,29 @@ function tableTopFixedHandler() {
 }
 
 function addChooseDateHandler() {
-    if (document.querySelector('.schedule-block__date') !== null) {
-        let chooseDateBlock = document.querySelector('.schedule-block__date')
+    // if (document.querySelector('.schedule-block__date') !== null) {
+    //     let chooseDateBlock = document.querySelector('.schedule-block__date')
+    //
+    //     chooseDateBlock.querySelectorAll('.schedule-block__text_choose-date').forEach(date => {
+    //         date.addEventListener('click', () => {
+    //             chooseDateBlock.querySelector('.schedule-block__text_current-date').textContent = date.textContent
+    //         })
+    //     })
+    // }
+}
 
-        chooseDateBlock.querySelectorAll('.schedule-block__text_choose-date').forEach(date => {
-            date.addEventListener('click', () => {
-                chooseDateBlock.querySelector('.schedule-block__text_current-date').textContent = date.textContent
+function addPlayButtonHandler() {
+    if (document.querySelectorAll('.block__play-button') !== null) {
+        let playButtons = document.querySelectorAll('.block__play-button'),
+            audioBlock = document.querySelector('.specialist-block__audio')
+        playButtons.forEach(playButton => {
+            playButton.addEventListener('click', () => {
+                playButton.classList.toggle('block__play-button_active')
+                if (playButton.classList.contains('block__play-button_active')){
+                    audioBlock.play()
+                }else {
+                    audioBlock.pause()
+                }
             })
         })
     }

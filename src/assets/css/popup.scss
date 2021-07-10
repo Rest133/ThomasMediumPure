@@ -152,21 +152,22 @@
 }
 
 .schedule-block__date-popup{
+  width: 372px;
+  padding: 30px;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
   top: 120%;
-  border-radius: 5px;
-  padding: 15px;
-  background: #f1f7e8;
-  &::before{
-    content: '';
-    position: absolute;
-    top: -10px;
-    left: 10%;
-    width: 10px;
-    height: 10px;
-    border-top: 0;
-    border-bottom: 10px solid #f1f7e8;
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
+  background: #FFFFFF;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.05);
+  border-radius: 16px;
+  @media (max-width: 767px) {
+    width: 335px;
+    padding: 15px;
+  }
+  @media (max-width: 374px) {
+    width: 320px;
+    padding: 10px;
   }
 }
 
