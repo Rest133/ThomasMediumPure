@@ -84,12 +84,18 @@
 
   @media (max-width: 1025px) {
     width: 87%;
+    position: relative;
+    right: -20px;
     &::-webkit-scrollbar {
       display: none;
     }
   }
   @media (max-width: 767px) {
     width: 72%;
+  }
+  @media (max-width: 374px) {
+    position: static;
+    right: unset;
   }
 }
 
@@ -134,6 +140,8 @@
     .table-block__scroll-wrapper {
       overflow-x: scroll;
       width: 87%;
+      position: relative;
+      right: -20px;
     }
   }
   @media (max-width: 767px) {
@@ -144,19 +152,23 @@
   }
   @media (max-width: 374px) {
     max-width: 100%;
+    .table-block__scroll-wrapper {
+      position: static;
+      right: unset;
+    }
   }
 }
 
-.table-block__schedule_specialist{
+.table-block__schedule_specialist {
   @media (max-width: 1025px) {
     justify-content: space-between;
-    .schedule-block__date{
+    .schedule-block__date {
       width: 18%;
     }
     .table-block__scroll-wrapper {
       width: 92%;
     }
-    .schedule-block__hours-row{
+    .schedule-block__hours-row {
       margin-left: 15px;
     }
   }
@@ -164,7 +176,7 @@
     .table-block__scroll-wrapper {
       width: 65%;
     }
-    .schedule-block__hours-row{
+    .schedule-block__hours-row {
       margin-left: 20px;
     }
   }
@@ -176,6 +188,7 @@
   width: 100%;
   @media (max-width: 1025px) {
     overflow-x: scroll;
+    overflow-y: hidden;
   }
 }
 
@@ -326,7 +339,8 @@
   display: flex;
   flex-flow: column;
   align-items: center;
-  &::before{
+
+  &::before {
     content: '';
     width: 415px;
     height: 192px;
@@ -334,6 +348,7 @@
     background-size: contain;
     margin-bottom: 20px;
   }
+
   @media (max-width: 1025px) {
     font-size: 32px;
     margin-top: 50px;
@@ -341,13 +356,13 @@
   @media (max-width: 767px) {
     margin-top: 10px;
     font-size: 24px;
-    &::before{
+    &::before {
       width: 335px;
       height: 154px;
     }
   }
   @media (max-width: 374px) {
-    &::before{
+    &::before {
       width: 100%;
       height: 154px;
     }
@@ -1456,8 +1471,9 @@
   }
 }
 
-.schedule-block__text_choose-date{
+.schedule-block__text_choose-date {
   cursor: pointer;
+
   &:hover {
     opacity: 0.7;
   }
@@ -2036,10 +2052,10 @@
   left: calc((100% - 70px) / 2);
 }
 
-.block__play-button_active{
+.block__play-button_active {
   &::after {
     left: 0;
-   -webkit-mask-image:  url(../img/2.content/pause.svg);
+    -webkit-mask-image: url(../img/2.content/pause.svg);
   }
 }
 
@@ -2662,7 +2678,26 @@
   min-height: 55vh;
 }
 
-.date-popup__title{
+.date-popup__mobile-title {
+  display: none;
+  @media (max-width: 1025px) {
+    display: flex;
+    justify-content: center;
+    margin: 32px auto;
+    max-width: 335px;
+    width: 100%;
+    font-family: Prata;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: 0.05em;
+
+    color: #000000;
+  }
+}
+
+.date-popup__title {
   font-family: Mada;
   font-style: normal;
   font-weight: 500;
@@ -2675,12 +2710,18 @@
   color: #000000;
 }
 
-.date-popup__table{
+.date-popup__table {
   width: 100%;
   border-spacing: 12px 17px;
+  @media (max-width: 1025px) {
+    max-width: 482px;
+  }
+  @media (max-width: 767px) {
+    max-width: 312px;
+  }
 }
 
-.date-popup__table-title{
+.date-popup__table-title {
   font-family: Prata;
   font-weight: 500;
   font-size: 11px;
@@ -2691,11 +2732,9 @@
 
   color: #6E7781;
 }
-.date-popup__table-date{
-  width: 30px;
-  height: 30px;
-  vertical-align: center;
 
+.date-popup__table-date {
+  vertical-align: center;
   font-family: Mada;
   font-weight: 500;
   font-size: 14px;
@@ -2705,18 +2744,30 @@
   color: #262D33;
   cursor: pointer;
   transition: 0.2s all ease-in-out;
-  &:hover{
+
+  p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
+  }
+
+  &:hover {
     color: #34520B;
   }
 }
 
-.date-popup__table-date_other-month{
+.date-popup__table-date_other-month {
   color: #CDD4DA;
 }
 
-.date-popup__table-date_current-date{
-  background: #F9DEB5;
-  border-radius: 50%;
+.date-popup__table-date_current-date {
+  p {
+    background: #F9DEB5;
+    border-radius: 50%;
+  }
 }
 
 @import "footer";
