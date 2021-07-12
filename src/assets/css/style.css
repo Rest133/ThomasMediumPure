@@ -349,7 +349,7 @@ header {
 }
 @media (max-width: 1025px) {
   .table-block__schedule {
-    max-width: 768px;
+    max-width: 748px;
   }
   .table-block__schedule .table-block__scroll-wrapper {
     overflow-x: scroll;
@@ -358,7 +358,7 @@ header {
 }
 @media (max-width: 767px) {
   .table-block__schedule {
-    max-width: 375px;
+    max-width: 355px;
   }
   .table-block__schedule .table-block__scroll-wrapper {
     width: 72%;
