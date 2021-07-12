@@ -226,12 +226,20 @@ header {
 
 .table-block {
   width: 100%;
-  margin-top: 50px;
   flex-flow: wrap;
+  margin: 50px auto 0;
+  max-width: 1440px;
+  padding: 0 20px;
+}
+@media (max-width: 1025px) {
+  .table-block {
+    width: 100%;
+    padding: 0 calc((100% - 768px) / 2);
+  }
 }
 @media (max-width: 767px) {
   .table-block {
-    padding: 0;
+    padding: 0 calc((100% - 375px) / 2);
   }
 }
 
@@ -285,8 +293,6 @@ header {
 @media (max-width: 1025px) {
   .table-block__right-column {
     width: 87%;
-    position: relative;
-    right: -20px;
   }
   .table-block__right-column::-webkit-scrollbar {
     display: none;
@@ -341,18 +347,16 @@ header {
 }
 @media (max-width: 1025px) {
   .table-block__schedule {
-    max-width: 728px;
+    max-width: 768px;
   }
   .table-block__schedule .table-block__scroll-wrapper {
     overflow-x: scroll;
     width: 87%;
-    position: relative;
-    right: -20px;
   }
 }
 @media (max-width: 767px) {
   .table-block__schedule {
-    max-width: 335px;
+    max-width: 375px;
   }
   .table-block__schedule .table-block__scroll-wrapper {
     width: 72%;
