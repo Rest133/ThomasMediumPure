@@ -44,9 +44,11 @@
   @media (max-width: 1025px) {
     width: 100%;
     padding: 0 calc((100% - 768px) / 2);
+    padding-left: calc((100% - 768px) / 2 + 20px);
   }
   @media (max-width: 767px) {
     padding: 0 calc((100% - 375px) / 2);
+    padding-left: calc((100% - 375px) / 2 + 20px);
   }
 }
 
